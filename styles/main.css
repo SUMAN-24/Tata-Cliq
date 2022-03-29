@@ -1,0 +1,13 @@
+.categories-hp {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+img {
+  width: 80%;
+  border-radius: 10px;
+}
