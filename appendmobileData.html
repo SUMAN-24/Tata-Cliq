@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  <link rel="stylesheet" href="./style/append.css">
+  </head>
+  <body>
+    <!-- mobile phone title box   -->
+    <div id="nContainer">
+      <div id="ntitle">
+        <h1>Apple mobile phones</h1>
+      </div>
+      <!-- sortbycategory div  -->
+      <div id="nsortcategory">
+        <div id="nwholedivnsort">
+          <span>Sort by:</span>
+          <select name="" id="nsort" onchange="nsortItem()">
+            <option value="pop">Popularity</option>
+            <option value="l2h">Price Low to High</option>
+            <option value="h2l">Price High to Low</option>
+            <option value="disc">Discounts</option>
+          </select>
+        </div>
+      </div>
+      <div id="ndatacont">
+        <div id="nsidebar">
+          <div id="npath">
+            <span>Home ></span>
+            <span> Electronics ></span>
+            <span>Mobile Phones </span>
+          </div>
+          <div id="nfilterdiv">
+            <div>Filters</div>
+            <div>Clear All</div>
+           
+          </div>
+          <hr>
+          <div id="ndipartment">
+         
+            <div>Departments</div>
+            <div>Electronics x</div>
+          </div>
+          <hr>
+          <div id="ndipartment">
+            <div>Category</div>
+            <div>Mobile Phones x</div>
+          </div>
+          <hr>
+          <div id="ndipartment">
+            <div>Product Type</div>
+            <div>Smartphones x</div>
+          </div>
+          <hr>
+          <div class="nthings">
+            <div>Brand</div>
+            <div>+</div>
+          </div>
+          <hr>
+          <div class="nthings">
+            <div>Price</div>
+            <div>+</div>
+          </div>
+          <hr>
+          <div class="nthings">
+            <div>Bluetooth Compatible
+            </div>
+            <div>+</div>
+          </div>
+          <hr>
+          <div class="nthings">
+            <div>Ram Capacity</div>
+            <div>+</div>
+          </div>
+          <hr>
+          <div class="nthings">
+            <div>Front Camera</div>
+            <div>+</div>
+          </div>
+          <hr>
+          <div class="nthings">
+            <div>Primary Camera</div>
+            <div>+</div>
+          </div>
+
+        </div>
+        <div id="mobiledatacont"></div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./script/mobileData.js"></script>
+<script src="./script/append.js"></script>
