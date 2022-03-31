@@ -25,16 +25,16 @@ body{
     width: auto;
     height: 10px;
     position: absolute;
-    bottom: 100px;
-    margin-right: -1320px;
+    bottom: 60px;
+    margin-right: -950px;
     pointer-events: auto;
-    gap: 3.5px;
+    gap: 2px;
 }
 
 /* To change indicators to circle */
 .carousel .carousel-indicators button{
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     border: 1px solid white;
     background: transparent;
@@ -52,10 +52,10 @@ body{
 
 /* css for left button */
 .carousel-control-prev {
-    width: 90px;
-    height: 90px;
+    width: 66px;
+    height: 66px;
     background: #d8d8d8 url(https://www.tatacliq.com/src/general/components/img/arrow.728e31d0944a.svg) no-repeat;
-    background-size: auto 42px;
+    background-size: auto 30px;
     background-position: center;
     opacity: 0.6;
     cursor: pointer;
@@ -73,10 +73,10 @@ body{
 
 /* css for right button */
 .carousel-control-next{
-    width: 90px;
-    height: 90px;
+    width: 66px;
+    height: 66px;
     background: #d8d8d8 url(https://www.tatacliq.com/src/general/components/img/arrow.728e31d0944a.svg) no-repeat;
-    background-size: auto 42px;
+    background-size: auto 30px;
     background-position: center;
     opacity: 0.6;
     cursor: pointer;
@@ -99,6 +99,7 @@ img{
     box-sizing: border-box;
 }
 
+/* CSS for discount section */
 div{
     display: block;
 }
