@@ -8,7 +8,11 @@
   margin-bottom: 60px;
 }
 
+<<<<<<< Updated upstream
 .category {
+=======
+.chp {
+>>>>>>> Stashed changes
   width: 80%;
   border-radius: 10px;
 }
@@ -93,8 +97,19 @@
   margin-top: 80px;
 }
 
+<<<<<<< Updated upstream
 .fimg {
   height: 80%;
+=======
+/* .fashion-hp > div:hover {
+  transform: scale(1.1);
+} */
+
+.fimg:hover {
+  height: 80%;
+  transform: scale(1.5);
+  /* transition: 0.2s; */
+>>>>>>> Stashed changes
 }
 
 .caption {
@@ -112,6 +127,13 @@
   margin-top: 80px;
 }
 
+<<<<<<< Updated upstream
+=======
+.techproducts > div > img:hover {
+  transform: scale(1.1);
+}
+
+>>>>>>> Stashed changes
 @media all and (min-width: 381px) and (max-width: 700px) {
   .fashion-hp {
     display: grid;
