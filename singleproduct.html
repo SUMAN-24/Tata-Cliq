@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./singleproduct.css">
+    <link rel="stylesheet" href="./styles/singleproduct.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
@@ -334,8 +334,8 @@
                                 <img src="icons/whistlistt.svg" alt="">
                             </div>
                             <div class="cart">
-                                <a href="#">
-                                    <span class="numb">0</span>
+                                <a href="./cart.html">
+                                    <span class="numb"></span>
                                     <img src="icons/cart icon.svg" alt="" style="width: 20px;">
                                 </a>
                             </div>
@@ -587,7 +587,8 @@ var selected = [
 
  
 
-
+ let length=   localStorage.getItem("cart");
+    document.querySelector(".numb").innerText = length;
 
 </script>
 
