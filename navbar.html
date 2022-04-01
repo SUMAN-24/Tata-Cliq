@@ -403,7 +403,11 @@
 
 </html>
 <script type="Module">
+    
     let footer=document.querySelector("#low-footer")
     import footerf from "./components/footer.js"
     footer.innerHTML = footerf()
+    let length=   JSON.parse(localStorage.getItem("cart"));
+    document.querySelector(".numb").innerText = length
+    
 </script>

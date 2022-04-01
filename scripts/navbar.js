@@ -12,8 +12,8 @@ function myFunction(e) {
 var x = localStorage.getItem("cart");
 if (x == null) {} else {
     document.querySelector(".numb").style.display = "flex";
-    x = JSON.parse(localStorage.getItem("cart"));
-    document.querySelector(".numb").innerHTML = x.length;
+   let x = JSON.parse(localStorage.getItem("cart"));
+   document.querySelector(".numb").innerHTML = length
 }
 
 // Navbar start
