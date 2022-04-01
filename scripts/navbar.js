@@ -10,7 +10,7 @@ function myFunction(e) {
 }
 
 var x = localStorage.getItem("cart");
-if (x == null) {} else {
+if (x == null) { } else {
     document.querySelector(".numb").style.display = "flex";
     x = JSON.parse(localStorage.getItem("cart"));
     document.querySelector(".numb").innerHTML = x.length;
@@ -18,7 +18,7 @@ if (x == null) {} else {
 
 // Navbar start
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
     var navbar = document.querySelector(".header");
     var upNav = document.querySelector(".up-nav");
     var logo = document.querySelector(".logo");
@@ -29,19 +29,19 @@ window.addEventListener("scroll", function() {
     downNav.classList.toggle("expand", window.scrollY);
 });
 //animated sign in appear
-document.querySelector("#sign").addEventListener("mouseover", function() {
+document.querySelector("#sign").addEventListener("mouseover", function () {
     console.log("h");
     document.querySelector(".speech-bubble").classList.add("display");
 });
-document.querySelector(".keep").addEventListener("mouseover", function() {
+document.querySelector(".keep").addEventListener("mouseover", function () {
     console.log("f");
     document.querySelector(".speech-bubble").classList.add("display");
 });
-document.querySelector(".keep").addEventListener("mouseout", function() {
+document.querySelector(".keep").addEventListener("mouseout", function () {
     console.log("f");
     document.querySelector(".speech-bubble").classList.remove("display");
 });
-document.querySelector(".accounts").addEventListener("mouseover", function() {
+document.querySelector(".accounts").addEventListener("mouseover", function () {
     document.querySelector(".speech-bubble").classList.add("display");
 });
 //----- appear end
@@ -126,7 +126,7 @@ function signupdata(p) {
             userData = JSON.parse(userData);
             console.log(userData);
         }
-        userData.forEach(function(e) {
+        userData.forEach(function (e) {
             if (e.name == users.name && e.mail == users.mail) {
                 alert("You are already registered, Please log in.");
                 a = 0;
@@ -189,7 +189,7 @@ function ope() {
     try {
         var cover = document.querySelector(".modelbox");
         cover.style.display = "block";
-    } catch (e) {}
+    } catch (e) { }
 }
 
 const modeltoggle = () => {
@@ -209,7 +209,7 @@ function clos() {
 
 // login  window end...
 var searchExpand = document.querySelector("#search-expand");
-searchExpand.addEventListener("focus", function() {
+searchExpand.addEventListener("focus", function () {
     var search = document.querySelector(".search");
     var searchIcon = document.querySelector(".search-icon");
     var cross = document.querySelector(".cross");
@@ -218,7 +218,7 @@ searchExpand.addEventListener("focus", function() {
     search.classList.add("strech");
 });
 var cross = document.querySelector(".cross");
-cross.addEventListener("click", function() {
+cross.addEventListener("click", function () {
     var search = document.querySelector(".search");
     var searchIcon = document.querySelector(".search-icon");
     searchIcon.classList.remove("fedd");
@@ -255,7 +255,7 @@ function show(a) {
         section[Number(a) - 1].style.display = "none";
         black[+a].classList.add("black");
         black[Number(a) - 1].classList.remove("black");
-    } catch (e) {}
+    } catch (e) { }
 }
 
 function hide(a) {
@@ -285,7 +285,7 @@ function showb(a) {
         blogo[Number(a) - 3].classList.add("showb");
         blogo[Number(a) + 1 - 8].classList.remove("showb");
         blogo[Number(a) - 1 - 8].classList.remove("showb");
-    } catch (e) {}
+    } catch (e) { }
 }
 
 function hideb(a) {
@@ -294,7 +294,7 @@ function hideb(a) {
 
 //mobile nav
 var count = 0;
-document.querySelector(".ham").addEventListener("click", function() {
+document.querySelector(".ham").addEventListener("click", function () {
     if (count % 2 == 0) {
         document.querySelector(".mob-nav").style.opacity = 1;
         document.querySelector(".header").style.height = "280" + "px";
