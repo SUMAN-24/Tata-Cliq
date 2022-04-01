@@ -195,6 +195,7 @@ function ope() {
 const modeltoggle = () => {
     let model = document.querySelector(".model-box");
     model.classList.toggle("modelhidden");
+    document.querySelector(".slideshow-container").style.display="none"
 };
 var register = document.querySelector(".register");
 register.addEventListener("click", modeltoggle);
@@ -205,6 +206,7 @@ mobile_sign.addEventListener("click", modeltoggle);
 function clos() {
     let model = document.querySelector(".model-box");
     model.classList.toggle("modelhidden");
+    document.querySelector(".slideshow-container").style.display="flex"
 }
 
 // login  window end...
@@ -231,7 +233,7 @@ var black = document.getElementsByClassName("sub-category-value");
 var blogo = document.querySelectorAll("Blogo");
 console.log(blogo[0]);
 var subCategoryOption = document.querySelectorAll(".sub-category-option");
-var arrow = document.querySelectorAll(".arrow");
+var arrow = document.querySelectorAll(".parrow");
 var section = document.querySelectorAll("section");
 var categoryExpand = document.querySelector(".category-expand");
 var categoryExpandb = document.querySelector(".b");
@@ -241,15 +243,15 @@ function show(a) {
         if (a == 0) {
             section[Number(a) + 1].style.display = "none";
             section[Number(a)].style.display = "flex";
-            arrow[Number(a) + 1].classList.remove("arrow-icon");
+            arrow[Number(a) + 1].classList.remove("parrow-icon");
             black[Number(a)].classList.remove("black");
             black[Number(a)].classList.add("black");
             black[Number(a) + 1].classList.remove("black");
         }
         categoryExpand.style.display = "flex";
-        arrow[+a].classList.add("arrow-icon");
-        arrow[Number(a) + 1].classList.remove("arrow-icon");
-        arrow[Number(a) - 1].classList.remove("arrow-icon");
+        arrow[+a].classList.add("parrow-icon");
+        arrow[Number(a) + 1].classList.remove("parrow-icon");
+        arrow[Number(a) - 1].classList.remove("parrow-icon");
         section[+a].style.display = "flex";
         section[Number(a) + 1].style.display = "none";
         section[Number(a) - 1].style.display = "none";
@@ -267,15 +269,15 @@ function showb(a) {
         if (a == 5) {
             section[Number(a)].style.display = "flex";
             section[Number(a) - 1].style.display = "none";
-            arrow[Number(a) - 1].classList.remove("arrow-icon");
+            arrow[Number(a) - 1].classList.remove("parrow-icon");
             black[Number(a)].classList.remove("black");
             black[Number(a)].classList.add("black");
             black[Number(a) - 1].classList.remove("black");
         }
         categoryExpandb.style.display = "flex";
-        arrow[+a].classList.add("arrow-icon");
-        arrow[Number(a) + 1].classList.remove("arrow-icon");
-        arrow[Number(a) - 1].classList.remove("arrow-icon");
+        arrow[+a].classList.add("parrow-icon");
+        arrow[Number(a) + 1].classList.remove("parrow-icon");
+        arrow[Number(a) - 1].classList.remove("parrow-icon");
         section[+a].style.display = "flex";
         section[Number(a) + 1].style.display = "none";
         section[Number(a) - 1].style.display = "none";
