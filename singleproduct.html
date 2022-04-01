@@ -399,13 +399,13 @@
         <div id="imagedivproduct">
             <img  id="bigimage" src="" alt="">
             <div id="downimages">
-              <img  src="https://img.tatacliq.com/images/i7/97Wx144H/MP000000010632172_97Wx144H_202109171907221.jpeg" alt="">
-              <img src="https://img.tatacliq.com/images/i7/97Wx144H/MP000000010632214_97Wx144H_202109171910123.jpeg" alt="">
-              <img src="https://img.tatacliq.com/images/i7/97Wx144H/MP000000010632172_97Wx144H_202109171907308.jpeg" alt="">
-              <img src="https://img.tatacliq.com/images/i7/97Wx144H/MP000000010632172_97Wx144H_2021091719073210.jpeg" alt="">
-              <img src="https://img.tatacliq.com/images/i7/97Wx144H/MP000000010632172_97Wx144H_202109171907243.jpeg" alt="">
-              <img src="https://img.tatacliq.com/images/i7/97Wx144H/MP000000010632214_97Wx144H_202109171910194.jpeg" alt="">
-            </div>
+                <img id="small1"  src="https://img.tatacliq.com/images/i7/97Wx144H/MP000000010632172_97Wx144H_202109171907221.jpeg" alt="">
+                <img  id="small2" src="https://img.tatacliq.com/images/i7/97Wx144H/MP000000010632214_97Wx144H_202109171910123.jpeg" alt="">
+                <img id="small3" src="https://img.tatacliq.com/images/i7/97Wx144H/MP000000010632172_97Wx144H_202109171907308.jpeg" alt="">
+                <img id="small4" src="https://img.tatacliq.com/images/i7/97Wx144H/MP000000010632172_97Wx144H_2021091719073210.jpeg" alt="">
+                <img id="small5" src="https://img.tatacliq.com/images/i7/97Wx144H/MP000000010632172_97Wx144H_202109171907243.jpeg" alt="">
+                <img id="small6" src="https://img.tatacliq.com/images/i7/97Wx144H/MP000000010632214_97Wx144H_202109171910194.jpeg" alt="">
+              </div>
         </div>
         <div id="productdesc">
             <p>Home  >   Electronics > Mobile Phones >  Smartphones >  Apple iPhone </p>
@@ -584,7 +584,32 @@ var selected = [
         window.location.href="./cart.html";
     };
 
+    let small1 = document.getElementById("small1").addEventListener("click",function (){
+        document.getElementById("bigimage").src="https://img.tatacliq.com/images/i7/97Wx144H/MP000000010632172_97Wx144H_202109171907221.jpeg";
+       
+    })
 
+    let small2 = document.getElementById("small2").addEventListener("click",function (){
+        document.getElementById("bigimage").src="https://img.tatacliq.com/images/i7/97Wx144H/MP000000010632214_97Wx144H_202109171910123.jpeg"
+    });
+
+    let small3 = document.getElementById("small3").addEventListener("click",function (){
+        document.getElementById("bigimage").src="https://img.tatacliq.com/images/i7/97Wx144H/MP000000010632172_97Wx144H_202109171907308.jpeg"
+    });
+
+    let small4 = document.getElementById("small4").addEventListener("click",function (){
+        document.getElementById("bigimage").src="https://img.tatacliq.com/images/i7/97Wx144H/MP000000010632172_97Wx144H_2021091719073210.jpeg"
+    });
+
+    let small5 = document.getElementById("small5").addEventListener("click",function (){
+        document.getElementById("bigimage").src="https://img.tatacliq.com/images/i7/97Wx144H/MP000000010632172_97Wx144H_202109171907243.jpeg"
+    });
+
+    let small6 = document.getElementById("small6").addEventListener("click",function (){
+        document.getElementById("bigimage").src="https://img.tatacliq.com/images/i7/97Wx144H/MP000000010632214_97Wx144H_202109171910194.jpeg";
+        
+    });
+    
  
 
  let length=   localStorage.getItem("cart");
