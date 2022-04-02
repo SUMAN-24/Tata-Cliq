@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(236, 236, 236);
+            margin-left: 100px;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        #acontainer {
+            display: flex;
+            gap: 30px;
+        }
+
+        #aleft {
+         
+            background-color: white;
+            width: 60%;
+            height: 500px;
+        }
+
+        #aright {
+            
+            background-color: white;
+            width: 23%;
+            height: 500px;
+            padding: 20px;
+        }
+
+        #acircle {
+            border-radius: 50%;
+
+            
+        }
+
+        #form1>input {
+            gap: 20px;
+            margin-left: 20px;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+
+        #a,
+        #w {
+            width: 375px;
+        }
+
+        #b {
+            height: 80px;
+            width: 375px;
+        }
+
+        .i {
+            border-radius: 50%;
+        }
+
+        #save {
+            margin-left: 600px;
+            background-color: rgb(255, 23, 68);
+            border-radius: 20px;
+            color: white;
+            padding: 10px;
+        }
+        #t1{
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <div id="acontainer">
+
+        <div id="aleft">
+
+            <h3> 1. Add Shipping Address</h3>
+            <form action="" id="form1">
+                <input type="text" placeholder="FIRST NAME(REQUIRED)*">
+                <input type="text" placeholder="LAST NAME(REQUIRED)*">
+                <input type="text" placeholder="Enter your PIN code" id="w">
+                <br>
+                <input id="a" type="text" placeholder="City & district">
+                <input  type="text" oninput="home1()" name="" id="b"
+                    placeholder="FLAT/House No, Floor,  Building/Company/Apartment/Name.Road/Street Name Area,Colony.Sector,Village">
+                <br>
+                <input type="text" name="" id="a" placeholder="State">
+                <br>
+                <input type="text" name="" id="a" placeholder="Landmark">
+                <input type="text" name="" id="a" placeholder="Mobile number">
+                <input type="checkbox" name="home" id="">
+                <label for="home" class="i">Home</label>
+                <input type="checkbox" name="home" id="">
+                <label for="home" class="i">Office</label> <br>
+
+            </form>
+            <input onclick="result()" id="save" type="submit" value="Save & Continue">
+            <!-- <a href="pay.html">save</a> -->
+        </div>
+        <div id="aright">
+           <h1 id="t1">display</h1>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    var res1 = document.getElementById("aright")
+    function result() {
+        console.log("rram")
+        window.location.assign("pay.html")
+
+    }
+    const res = JSON.parse(localStorage.getItem("store"));
+    console.log("res", res)
+  
+    res.map(function(data){
+        let div = document.createElement("div");
+
+        let p = document.createElement("p");
+        p.innerText = data.description+"     "+"shipping";
+        console.log(p)
+
+        let p1 = document.createElement("p");
+        p1.innerText =`prise is${data.price}`; 
+
+        div.append( p1);
+
+        res1.append(div)
+    })
+     var total = res.reduce(function (acc, cv) {
+             return acc+Number(cv.price)
+    },0);
+    document.querySelector("#t1").textContent=`total amount is ${total}`
+    console.log("total", total)
+
+    localStorage.setItem("totalamount",JSON.stringify(total))
+
+    function add(input){
+  console.log("a",input)
+    }
+     function home1(){
+         let inp=document.getElementById("b").value;
+          
+         localStorage.setItem("home",JSON.stringify(inp))
+         console.log("input",inp)
+     }
+
+</script>
