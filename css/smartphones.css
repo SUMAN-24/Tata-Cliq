@@ -133,3 +133,170 @@ div{
     flex-shrink: 0;
     border-radius: 4px;
 }
+
+/* CSS for smartphone slider section */
+.smartphone_slider_section{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.smartphone-slider_section_2{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    max-width: 1024px;
+    text-align: left;
+}
+
+.subbrands{
+    width: 100%;
+    height: auto;
+    margin: 60px auto 0px;
+}
+
+.carousel_2{
+    width: 100%;
+    height: auto;
+}
+
+.carousel_header{
+    width: 100%;
+    float: left;
+    padding: 0 10px;
+    color: #212121;
+    font-family: semibold;
+    position: relative;
+}
+
+.carousel_nav{
+    float: right;
+}
+
+.back_button{
+    width: 40px;
+    height: 40px;
+    background: #fff url(https://www.tatacliq.com/src/general/components/img/arrow.728e31d0944a.svg) no-repeat;
+    background-position: center;
+    background-size: 20px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    float: left;
+    margin-right: 2px;
+    margin-left: 40px;
+    transform: rotate(-180deg);
+}
+
+.forward_button{
+    width: 40px;
+    height: 40px;
+    background: #fff url(https://www.tatacliq.com/src/general/components/img/arrow.728e31d0944a.svg) no-repeat;
+    background-position: center;
+    background-size: 20px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    float: left;
+}
+
+.carousel_box{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+}
+
+.carousel_slider{
+    width: 100%;
+    height: auto;
+    white-space: nowrap;
+    transition: 200ms;
+}
+
+.carousel_element{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.carousel_element:hover{
+    transform: scale(1.0205);
+}
+.imagelogo{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    white-space: initial;
+}
+
+.circleholder{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-bottom: 100%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.imageholder{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.images_section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.images{
+    width: 87%;
+    height: 87%;
+    position: relative;
+    top: 0;
+    transition: 400ms;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    opacity: 1;
+    object-position: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding-top: 35px;
+    margin-left: -10px;
+}
+
+.logoholder{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 250px; 
+}
+
+.companyicon{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.logo{
+    height: 100%;
+    width: auto;
+    /* max-width: 100%; */
+    overflow: hidden;
+    display: inline-block;
+    vertical-align:middle;
+    
+}
+
+.logoimage{
+    width: 65%;
+    height: auto;
+    display: inline-block;
+    vertical-align: bottom;
+}
