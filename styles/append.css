@@ -16,12 +16,14 @@ body {
     justify-content: flex-end;
   }
   #nwholedivnsort {
+  
     border: 0.1rem solid black;
     padding: 0.5rem;
     margin:1rem;
     border-radius: 0.3rem;
   }
   #nsort {
+   
     border: none;
     background-color: rgb(236, 236, 236);
     padding-right: 2rem;
@@ -29,6 +31,7 @@ body {
   }
 
   #mobiledatacont {
+    
     margin-top: 0.5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -86,10 +89,11 @@ body {
 
   #ndatacont{
     display: flex;
+    justify-content: space-between;
   }
 
   #nsidebar{
-    width:18.75rem;
+    width:20.75rem;
     margin:1rem;
    background: #ffffff
   }

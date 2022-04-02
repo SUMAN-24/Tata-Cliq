@@ -1,82 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
- 
-    <title>Order Successful</title>
-    <link rel="shortcut icon" href="https://static.nnnow.com/client/assets/images/favicon.ico">
-
-    <style>
-        body {
-            text-align: center;
-            padding: 40px 0;
-            background: #e8eaec;
-        }
-
-        h1 {
-            color: #ff3399;
-            font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-            font-weight: 900;
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            color: #ff3399;
-            font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-            font-size: 20px;
-            margin: 0;
-        }
-
-        i {
-            font-size: 100px;
-            line-height: 200px;
-            margin-left: -15px;
-        }
-
-        .card {
-            background: white;
-            padding: 60px;
-            border-radius: 4px;
-            box-shadow: 0 2px 3px #C8D0D8;
-            display: inline-block;
-            margin: 0 auto;
-        }
-
-        button {
-            margin-top: 10%;
-            width: 50%;
-            height: 40px;
-            background-color: #ff1bff;
-            border: none;
-            border-radius: 20px;
-        }
-
-        .b {
-            color: white;
-            font-size: 20px;
-        }
-        .checkmark{
-            color: white
-        }
-        a{
-            text-decoration: none;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles/paymentsuccessfulpage.css">
 </head>
-
 <body>
-    <div class="card">
-        <div style="border-radius:200px; height:200px; width:200px; background: #ff3399; margin:0 auto;">
-            <i class="checkmark">✓</i>
-        </div>
-        <div></div>
-        <h1>Order Successful</h1>
-        <p>Thank you For Shopping With Us<br />Check your email for details.</p>
-        <button><a class="b" href="index.html">Go to Homepage</a></button>
+   
+<div id="container">
+   <div id="login" class="fontsize">
+       <img  id="tick" src="https://m.media-amazon.com/images/I/41ov7KY-VVL._AC_SS450_.jpg" alt="Banner">
+        <h2 class="textSize">Payment Successful</h2>
+        <p class="fontsize">Enjoy Your Offer </p>
+        <button id="backtohome"  onclick="homepage()">Back To Home</button>
     </div>
-
-
+</div>
 </body>
-
 </html>
+<script>
+    function homepage()
+    {
+        window.location.href="./index.html"
+    }
+</script>

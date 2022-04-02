@@ -1,194 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/cartpage.css">
+    <link rel="stylesheet" href="./styles/timer.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <style>
-        #container1 {
-            display: flex;
-            justify-content: space-around;
-            gap: 1.875rem;
+      #t1{
+          display: grid;
+          justify-content: center;
+          align-items: center;
+
+      }
+       
+        #r{
+            padding: 1rem;
+            border-radius: 1rem;
+            width: 9rem;
+            margin:1rem;
 
         }
-
-        #fit {
-            background-color: rgb(236, 236, 236);
-            margin-left: 6.25rem;
-            
-        }
-
-        #fit>div>div>div {
-            padding: 1.25rem 0rem 0rem 1.25rem
-        }
-
-        #left1 {
-
-
-            width: 60%;
-            height: 37.5rem;
-        }
-
-        /* 
-        #right1 {
-
-            background-color: white;
-            width: 23%;
-            height: 500px;
-            margin-left: 0.625rem;
-            border: 1px solid red;
-        } */
-
-        #q,
-        .q2 {
-
-            background-color: white;
-            width: 100%;
-            height: 7.25rem;
-        }
-
-        #q4 {
-
-            background-color: white;
-            width: 100%;
-            height: 10.375rem;
-
-
-        }
-
-        #q4>div {
-            gap: 1.25rem;
-            margin-bottom: 1.0rem;
-
-
-        }
-
-        #left1>div {
-            margin-bottom: 1.25rem;
-        }
-
-        #select1 {
-            height: 6.25rem;
-            width: 100%;
-
-            background-color: white;
-
-        }
-
-        #form1>input {
-
-            margin-left: 1.25rem;
-            padding: 0.5rem;
-            width: 12.5rem;
-
-        }
-
-        #gift {
-            border-radius: 0.625rem;
-           
-        }
-
-        .q2 {
-            height: 12.5rem;
-        }
-
-        #form2 {
-            width: 100%;
-            height: 12.5rem;
-
-
-        }
-
-        #form2>input,
-        #year,
-        #month {
-            border-radius: 0.625rem;
-
-        }
-
-        #card {
-            width: 18.75rem;
-            margin-right: 3.125rem;
-            padding: 0.5rem;
-            margin-top: 1.25rem;
-        }
-
-        #month1 {
-            width: 6.25rem;
-        }
-
-        select {
-            width: 12.5rem;
-            padding: 0.5rem;
-        }
-
-        #card1 {
-            padding: 0.5rem;
-        }
-
-        #sub {
-            padding: 0.5rem;
-            border-radius: 0.625rem;
-            margin-left: 6.25rem;
-            background-color: rgb(255, 23, 68);
-            color: white;
-            width: 8.125rem;
-        }
-
-        #gift {
-            display: flex;
-        }
-
-        #card2 {
-            border-radius: 0.625rem;
-        }
-
-        #im1 {
-            margin-top: 0.625rem;
-        }
-
-        #btn {
-            margin-left: 500px;
-            padding: 0.5rem;
-            border-radius: 0.625rem;
-            background-color: rgb(255, 23, 68);
-            color: white;
-            width: 8.125rem;
-        }
-
-        #masai {
-            border-radius: 0.625rem;
-        }
-
-        p {
-            font-family: sans-serif;
-        }
-
-        #right1>div {
-
-            display: flex;
-            gap: 4.375rem;
-        }
-
-        #right1>div>div {
-
-            width: 50%;
-            height: 100%;
-
+        #p{
+         padding: 1rem;
+         width: 9rem;
+         margin:1rem;
+         background-color: rgb(255,23,68);
+         color: white;
+         border-radius: 1rem;
         }
     </style>
 </head>
-
 <body>
-     
+<div>
+    
     <!-- --------- Nav Bar starts ------------------->
     <div>
         <nav class="header">
@@ -666,243 +512,35 @@
         </div>
     </div>
     <!-- --------- Nav Bar Ends ------------------->
-   <div id="fit">
-    <h1>Checkout</h1>
-    <div id="container1">
-        <div id="left1">
-            <div id="q">
-                <div id="gift">
-                    <img id="im1" height="40px"
-                        src="https://t4.ftcdn.net/jpg/03/03/72/17/240_F_303721767_iNO49Cr0bPrcZT9eIuTr0VUa5QXuK1es.jpg"
-                        alt="">
-                    <h3>Delivery Address</h3>
 
-
-                </div>
-                <p id="p1"></p>
-            </div>
-            <div id="q">
-                <div id="gift">
-                    <img id="im1" height="40px"
-                        src="https://t4.ftcdn.net/jpg/03/03/72/17/240_F_303721767_iNO49Cr0bPrcZT9eIuTr0VUa5QXuK1es.jpg"
-                        alt="">
-
-                    <h3>Delivery Mode</h3>
-
-                </div>
-                <p>Delivery will be day after tomorrow.</p>
-            </div>
-            <div id="q4">
-                <div id="gift">
-                    <img height="50rem" src="https://img.icons8.com/fluency/2x/wedding-gift.png" alt="">
-                    <h3>Have a gift card?</h3>
-                </div id="form1">
-                <!-- <form action="" id="form1">
-                 <input type="text" placeholder="Voucher number"> 
-                 <input type="text" placeholder="Voucher pin">
-                 <input type="submit" name="" id="card2" value="Add a gift card">
-             </form> -->
-                <select name="" id="masai">
-                    <option value="">select voucher</option>
-                    <option value="30">masai30</option>
-                    <option value="40">masai40</option>
-                    <option value="50">masai50</option>
-                </select>
-                <button id="btn" onclick="offer()">add gift card</button>
-
-            </div>
-            <div class="q2">
-                <form action="" id="form2">
-                    <h3>Payment Method</h3>
-                    <i class="fa fa-credit-card"> credit card</i>
-                    <br>
-                    <input type="text" name="" id="card" placeholder="Card Number">
-                    <select name="" id="month">
-                        <option id="month1" value="">Expiry Month</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                    </select>
-                    <select name="" id="year">
-                        <option value="Expiry Year">Expiry Year</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
-                        <option value="2027">2027</option>
-                        <option value="2028">2028</option>
-                        <option value="2029">2029</option>
-                        <option value="2030">2030</option>
-                        <option value="2030">2031</option>
-                        <option value="2032">2032</option>
-                        <option value="2033">2033</option>
-                    </select>
-                    <input type="text" name="" id="card" placeholder="Name on card">
-                    <input type="text" placeholder="CVV" id="card1">
-                    <input type="submit" value="Pay now" id="sub">
-                </form>
-
-            </div>
+   <div id="otpcontainer">
+    <h5 id="Enter">Enter the 6 digit OTP</h5>
+    <p id="otp">OTP sent to your mail</p>
+    
+<div>
+    <form id="form">
+        <input type="text" maxlength="1" autofocus id="num1"  onkeyup="movetoNext(this, 'num2')">
+        <input type="text" maxlength="1" autofocus id="num2" onkeyup="movetoNext(this, 'num3')">
+        <input type="text" maxlength="1" autofocus id="num3" onkeyup="movetoNext(this, 'num4')">
+        <input type="text" maxlength="1" autofocus id="num4" onkeyup="movetoNext(this, 'num5')">
+        <input type="text" maxlength="1" autofocus id="num5" onkeyup="movetoNext(this, 'num6')">
+        <input type="text" maxlength="1" autofocus id="num6" onkeyup="change()"  >
+        <div class="button">
+            <input type="submit" value="SUBMIT" id="nsubmit" class="fontsize">
         </div>
-        <!-- <div id="right1"> -->
-        <div  style="width:30%">
-            <div class="makeitflex"><img width="60" src="./images/fast.png" alt="">
-                <h4>Congratulations!! Your order is eligible <br> for FREE Shipping!</h4>
-            </div>
-            <div>
-                <div class="nomargintop">
-                    <h4>Bag Total</h4>
-                    <p id="bagtotalprice">₹0</p>
-                </div>
-                <div class="nomargintop">
-                    <h4>Shipping Charge</h4>
-                    <p style="color:green;font-weight:bolder">FREE</p>
-                </div>
-                <div class="nomargintop">
-                    <h4>Bag Subtotal</h4>
-                    <p id="bagsubtotalprice">₹0</p>
-                </div>
-                <div class="nomargintop">
-                    <h4>Product Discount(s)</h4>
-                    <p>-₹5000.00</p>
-                </div>
-                <div class="nomargintop">
-                    <p style="color:green;">You will save ₹5000.00 on this order</p>
-                </div>
-            </div>
-            <div id="margingapdiv">
-                <div class="nomargintop">
-                    <div style="padding:5%">
-                        <h2>Total:</h2>
-                        <h2 id="totalnetprice"></h2>
-                    </div><button id="checkoutbuttonincart">
-                        <span id="gotocheckoutpage">Checkout</span>
-                        <div class="liquid"></div>
-                    </button>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- <div>
-                <div>Bag Total</div>
-                <div>122</div>
-            </div>
-            <div> <div> shipping charge</div>
-                <div> free</div>
-            </div>
-            <div>
+        </form>
+</div>
 
 
-            </div>
-            <div>
-
-
-            </div>
-            <div>
-                <h1 id="t2"></h1>
-            </div> -->
-
-        <!-- </div> -->
-    </div>
    </div>
-</body>
+   
 
+</body>
 </html>
 <script src="./scripts/navbar.js"></script>
 <script>
-
-
-    var t = document.getElementById("form2").addEventListener("submit", submit1)
-    function submit1() {
-        event.preventDefault();
-        console.log("raam")
-        window.location.assign("otp.html")
+    function res(){
+        window.location.href= "./sucess.html"
     }
-
-    var total = JSON.parse(localStorage.getItem("total"));
-    //    var t4= document.getElementById("t2").textContent=`total amount is ${total}`
-    console.log("t:", total);
-    var dis = 0;
-    var per = 0;
-
-
-    // t4=document.querySelector("#t2").textContent=`total is ${t2}`
-    function offer() {
-        console.log("raam")
-        let t1 = document.querySelector("#masai").value;
-
-        if (t1 == 30) {
-            per = 30;
-            dis = 0;
-            show();
-        }
-        else if (t1 == 40) {
-            per = 40;
-            dis = 0;
-            show();
-
-        }
-        else if (t1 == 50) {
-            per = 50;
-            dis = 0;
-            show();
-        }
-        else {
-            dis = 0;
-            show();
-        }
-    }
-
-    ///               abhinav data right cornner start -------------------
-
-
-    document.getElementById("bagtotalprice").innerHTML = `₹ ${total}`;
-    document.getElementById("bagsubtotalprice").innerHTML = `₹ ${total}`;
-    document.getElementById("gotocheckoutpage").innerHTML = `₹ ${total}`;
-
-    ///               abhinav data right cornner start -------------------
-
-
-
-
-
-
-
-
-    show();
-
-    // offer()
-    function show() {
-        let ttt = total;
-        console.log("total", total)
-
-        var res = Math.ceil(((total) / 100) * (100 - per))
-        document.querySelector("#gotocheckoutpage").textContent ="₹"+ res;
-        document.querySelector("#bagtotalprice").textContent ="₹"+ res;
-        document.querySelector("#bagsubtotalprice").textContent = "₹"+ res;
-
-        console.log("total11", res)
-    }
-
-
-    let t5 = JSON.parse(localStorage.getItem("home"));
-    console.log("yyy", t5)
-    document.getElementById("p1").append(t5)
-
-
-
-    let length=   localStorage.getItem("cart");
-    document.querySelector(".numb").innerText = length;
-
 </script>
+<script src="./scripts/timer.js"></script>

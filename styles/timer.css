@@ -1,0 +1,52 @@
+#otpcontainer{
+  display: inline;
+  justify-content: center;
+  place-items: center;
+  align-items: center;
+
+}
+
+#Enter{
+  text-align: center;
+}
+#otp{
+  text-align: center;
+}
+
+#form {
+  text-align:center;
+  margin: auto;
+  margin-top: 35px;
+  width: 35%;
+}
+form input {
+  width: 32px;
+  height: 31px;
+  border: 1px solid #ddd;
+  /* line-height: 50px; */
+  text-align: center;
+  font-weight: 200;
+  margin: 0 4px;
+  border-radius: 2px;
+  outline: none;
+}
+.button {
+  margin-top: 35px;
+  margin-left: 10px;;
+ 
+
+}
+#nsubmit {
+  width: 292px;
+  text-align:center;
+  justify-content: center;
+  margin-right: 20px;
+  height: 40px;
+  background-color: rgb(255, 23, 68);
+  color: whitesmoke;
+  font-size: medium;
+  cursor: pointer;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  /* padding-bottom: 10px;; */
+}
