@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" href="./styles/cartpage.css">
+ <link rel="stylesheet" href="./singleproduct.css">
+ <link rel="stylesheet" href="./styles/navbar.css">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+ <title>Online Shopping Site for Lifestyle</title>
+ <link rel="icon" href="https://www.tatacliq.com/favicon.ico" type="png">
+</head>
+<body>
+    <!-- // navbar id// -->
+    <div>
+      <!-- --------- Nav Bar starts ------------------->
+      <div>
+        <nav class="header">
+            <div class="logo">
+                <img onclick="location.href='index.html'" src="./images/Screenshot 2022-03-29 223046.png" alt="">
+            </div>
+            <!-- responsive nav -->
+            <div class="mob-nav">
+                <div onclick="location.href='Skincare.html'">Women's Skincare</div>
+                <div onclick="location.href='mensGrooming.html'">Mans Fashion</div>
+                <div onclick="location.href='kids.html'">Kid's Fashion</div>
+                <div onclick="location.href='ele.html'">Electronics</div>
+                <div class="mob-sign" onclick="ope()">Sign In / SignUp</div>
+            </div>
+            <!-- responsive nav -->
+            <div class="nav-right">
+                <div class="up-nav">
+                    <div class="tata-luxury-page">
+                        <a href="#">Tata CLiQ Luxury</a>
+                    </div>
+                    <!--login and track tabs-->
+                    <div class="login-and-tracktab">
+                        <div class="tata-luxury-page">
+                            <a href="#">CLiQ Cash</a>
+                        </div>
+                        <div class="tata-luxury-page" onclick="ope()">
+                            <a href="#">Gift Card</a>
+                        </div>
+                        <div class="tata-luxury-page" onclick="ope()">
+                            <a href="#">CLiQ Care</a>
+                        </div>
+                        <div class="tata-luxury-page" onclick="ope()">
+                            <a href="#">Track Orders</a>
+                        </div>
+                        <div class="tata-luxury-page sig" onclick="ope()" style="height: 40px;cursor: pointer;">
+    
+                            <a href="#" id="sign">Sign in / Sign Up</a>
+                        </div>
+                        <div class="accounts">
+                        </div>
+                    </div>
+                </div>
+                <div class="down-nav">
+                    <div class="dropdowns">
+                        <div class="category" onmouseover="show()" onmouseout="hide()">Categories
+                            <div class="img"></div>
+                            <div class="category-expand">
+                                <div class="sub-category">
+                                    <div class="sub-category-value black" onmouseover="show(0)" onmouseout="hide(0)">Women's Fashion
+                                        <div class="arrow arrow-icon"></div>
+                                    </div>
+                                    <div class="sub-category-value" onmouseover="show(1)" onmouseout="hide(1)">Men's Fashion
+                                        <div class="arrow"></div>
+                                    </div>
+                                    <div class="sub-category-value" onmouseover="show(2)" onmouseout="hide(2)">TV & Appliances
+                                        <div class="arrow "></div>
+                                    </div>
+                                    <div class="sub-category-value" onmouseover="show(3)" onmouseout="hide(3)">Mobile phones
+                                        <div class="arrow "></div>
+                                    </div>
+                                </div>
+                                <!--  sub category sub values   -->
+                                <div class="sub-category-option ">
+                                    <section class="show">
+                                        <div class="sub-category-option-header">Ethnic Wear</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Kurtas & Kurtis</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Suits Sets</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sarees</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Lehenga Sets</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Bottom</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Dupattas</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Blouse & Dress</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Inner & Nightwear</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Camisole</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sleeping & Robes</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Shapewear</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Custom clothes</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Western Wear</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Top & Tees</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Dress</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Shirts</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Pant & Trousers</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Jeans</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Leggings</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Jumpsuits</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Skirts</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Jacket & Blazers</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">shrugs</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sweatshirts</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sports Shoes</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Flip Flops</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Dressy Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">casual Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Smart Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Formal Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sports Watches</div>
+                                        <!-- <div class="sub-category-option-value"  onclick="location.href='#'">wd</div> -->
+                                    </section>
+                                    <section>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Footwear</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Casual Shoes</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sneakers</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Formal Shoes</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Training Shoes</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Running Shoes</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sports Shoes</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Flip Flops</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Boots</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Sports Wear</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">T-shirts & Jersys</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Shorts</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sports jackets</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Gym Gear</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Joggers</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Clothing</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">T-shirts & Polos</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Casual Shirts</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Jeans</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Trousers</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Shorts</div>
+    
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Workwear Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">casual Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Smart Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Formal Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sports Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Digital Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Partywear Watches</div>
+    
+                                    </section>
+                                    <section>
+    
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Home Appliances Store</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Drapes</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Chairs</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Pillow</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Throw</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Bedsheets</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Table Lamp</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Armoire</div>
+    
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Televisions</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Smart TVs</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">4K Ultra HD TVs</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Android TVs</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Curveshape TVs</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">OLED &amp; QLED TVs</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Bestselling TVs</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Audio Store</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Soundbars</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Home Theatres</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Party Speakers</div>
+    
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Kitchen Appliances Store</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Kitchen Appliances</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Microwave Ovens</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Mixers &amp; Grinders</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Electric Cookers</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Food &amp; Roti Makers</div>
+    
+                                    </section>
+                                    <section>
+    
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Mobile Phones Store</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Mobile Phones</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">iPhone</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">New Launches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Flagship Phones</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Feature Phones</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Shop by Brand</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Apple</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Samsung</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Vivo</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Oppo</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Realme</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Nokia</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Xiaomi</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">OnePlus</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Laptops</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">NoteBooks</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Ultra Portable</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">ChromeBook</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Netbook</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">MacBook</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Tablet as a laptops</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Shop by Brands</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">HP</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Dell</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Lenavo</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Asus</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Acer</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Apple</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">MSI</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Microsoft</div>
+    
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Accessories Store</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Cases &amp; Covers</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Screen Protectors</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Chargers</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Cables</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Power Banks</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Memory Cards</div>
+    
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brands" onmouseover="showb()" onmouseout="hideb()">Brands
+                            <div class="imgg"></div>
+                            <div class="category-expand b">
+                                <div class="sub-category bs">
+                                    <div class="sub-category-value" onmouseover="showb(4)" onmouseout="hideb(8)">TV & Appliances
+                                        <div class="arrow arrow-icon"></div>
+                                    </div>
+                                    <div class="sub-category-value" onmouseover="showb(5)" onmouseout="hideb(9)">Electronics
+                                        <div class="arrow"></div>
+                                    </div>
+                                </div>
+                                <!--  sub category sub values   -->
+                                <div class="sub-category-option ">
+                                    <section class="show">
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Popular Brands</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Lg</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Samsung</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sony</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Hitachi</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Daikin</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Carrier</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Blue Star</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+    
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Featured brand</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">VU</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Lloyd</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">TCL</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sanyo</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Godrej</div>
+    
+                                    </section>
+                                    <section>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Popular brands</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Apple</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Oppo</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Xiaomi</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">HP</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Dell</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Asus</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Canon</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+    
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Featured brands</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Nokia</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Motorola</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Boult Audio</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Acer</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Microsoft</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Noise</div>
+    
+                                    </section>
+                                </div>
+                                <div class="brand-logos">
+                                    <Blogo class="showb">
+                                        <div class="elec-logo">
+                                            <img src="icons/tv& (1).jpg" alt="">
+                                        </div>
+                                        <div class="elec-logo">
+                                            <img src="icons/tv& (2).jpg" alt="">
+                                        </div>
+                                        <div class="elec-logo">
+                                            <img src="icons/tv& (4).jpg" alt="">
+                                        </div>
+                                    </Blogo>
+                                    <Blogo>
+                                        <div class="elec-logo">
+                                            <img src="icons/elec (2).jpg" alt="">
+                                        </div>
+                                        <div class="elec-logo">
+                                            <img src="icons/elec (6).jpg" alt="">
+                                        </div>
+                                        <div class="elec-logo">
+                                            <img src="icons/elec (1).jpg" alt="">
+                                        </div>
+                                    </Blogo>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cross"></div>
+                    <div class="search-cart-page">
+                        <div class="cart-whistlist">
+                            <div class="whist-list">
+                                <img src="icons/whistlistt.svg" alt="">
+                            </div>
+                            <div class="cart">
+                                <a href="./cart.html">
+                                    <span class="numb"></span>
+                                    <img src="icons/cart icon.svg" alt="" style="width: 20px;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <input type="text" id="search-expand" onkeydown="myFunction(event)" autocomplete="off" placeholder="Search">
+                            <div class="search-icon">
+                                <img src="icons/searchwhite.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <!-- Login and Signup Page Start  -->
+        <div class="model-box modelhidden">
+            <div class="pcontainer">
+                <i class="far fa-times-circle bd" onclick="clos()"></i>
+                <div class="signup">
+                    <h1>Welcome To TataCliq</h1>
+                    <p>Please enter Email address</p>
+                    <div class="signup-form">
+                        <form onsubmit="login(event)" id="cont2"></form>
+                        <form id="cont">
+                            <input id="name" name="name" type="text" placeholder="Name" />
+                            <input id="mail" name="mail" type="email" placeholder="Email" />
+                            <input id="pass" name="pass" type="password" placeholder="Password" />
+    
+                        </form>
+                        <div class="tandc">
+                            By continue you are agree to our
+                            <a href="#" class="login-btnlink">Terms of Services</a> &
+                            <a href="#" class="login-btnlink">Privacy Policy</a>
+                        </div>
+                        <button id="sign-up" onclick="signupdata(event)">Sign-Up</button>
+                        <h3 id="chnge-mobile"><span class="span-lg">or</span> <span class="span-lg2">login to your account</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="keep">
+            <div class="speech-bubble">
+                <div class="register" onclick="ope()">Login/ Register</div>
+            </div>
+        </div>
+        </div>
+        <!-- --------- Nav Bar Ends ------------------->
+    </div>
+    <div id="aftercartnav">
+    <h1>My Bag</h1>
+    </div>
+
+    <!-- ////////////////////////////cartproduct map area//////////////////////// -->
+    <div id="cartmaindiv">
+    <div id="cartproduct"></div>
+    <div id="cartrhs">
+        <div class="makeitflex">
+         <div  class="makeitflex"> <img width="60" height="40"  src="./images/coupon.png" alt="">
+          <h4>Check For Coupon</h4><u>Apply</u></div>
+         
+        </div>
+        <div id="aftercoupondiv">
+            <p>Need GST invoice?</p>
+            <p>Add Details</p>
+        </div>
+        <div>
+            <div class="makeitflex"><img  width="60" src="./images/fast.png" alt=""><h4>Congratulations!! Your order is eligible <br> for FREE Shipping!</h4></div>
+             <div>
+                 <div  class="nomargintop"><h4>Bag Total</h4><p id="bagtotalprice">₹0</p></div>
+                 <div  class="nomargintop"><h4>Shipping Charge</h4><p style="color:green;font-weight:bolder">FREE</p></div>
+                 <div  class="nomargintop"><h4>Bag Subtotal</h4><p id="bagsubtotalprice">₹0</p></div>
+                 <div  class="nomargintop"><h4>Product Discount(s)</h4><p>-₹5000.00</p></div>
+                 <div  class="nomargintop"><p  style="color:green;">You will save ₹5000.00 on this order</p></div>
+             </div>
+             <div  id="margingapdiv">
+                 <div class="nomargintop"><div><h2>Total:</h2> <h2 id="totalnetprice"></h2></div><button  id="checkoutbuttonincart" >
+                    <span id="gotocheckoutpage">Checkout</span>
+                    <div class="liquid"></div>
+                  </button></div>
+             </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- ///////////////////////////////footer part//////////////////////// -->
+ <div id="footerappendhere"></div>
+</body>
+</html>
+
+
+<script>
+// let arr =  [];
+
+let mobileDataarr = JSON.parse(localStorage.getItem('mobileDataarr'))  ||  [];
+console.log(mobileDataarr);
+
+
+var total =  mobileDataarr.reduce(function(acc,item){
+        
+        return acc + item.price;
+       
+        display()
+     },0);
+   
+     localStorage.setItem("total",JSON.stringify(total));
+     let length= mobileDataarr.length;
+         localStorage.setItem("cart",length)
+display()
+
+function display(){
+
+    // cartproduct.innerHTML=null;
+
+mobileDataarr.map((item,index)=>{
+
+    // creating div.////////////////////
+    let div= document.createElement("div");
+    div.setAttribute("id","seperateitems");
+    
+    let innerdiv  = document.createElement("div");
+    innerdiv.setAttribute("id","innerdiv")
+    let name = document.createElement("h2");
+    name.innerHTML = `${item.name}`;
+   
+    let title = document.createElement("h3");
+    title.innerHTML= item.desc
+    let price = document.createElement("p");
+    price.setAttribute("id","itemprice")
+    price.innerHTML =`₹ ${item.price }`;
+    
+   
+    let plus = document.createElement("button");
+  
+    plus.setAttribute("id","plus");
+    plus.innerHTML =`&#43;`;
+   
+    
+    let quan = document.createElement("span");
+    quan.innerText='Quantity:';
+    let quantity = document.createElement("div");
+   var count = 1;
+   var oneproductprice; 
+   quantity.innerHTML = count;
+ 
+   let quantdiv = document.createElement("div");
+   quantdiv.setAttribute("id","quantdiv");
+
+  let minus = document.createElement("button");
+  minus.setAttribute("id","minus");
+  minus.innerHTML=`&#8722;`
+
+   quantdiv.append(quan,plus,quantity,minus)
+
+    let image = document.createElement("img");
+    image.src= item.image;
+   
+    let strikeprice = document.createElement("s");
+   
+    let rating = document.createElement("p");
+    rating.innerHTML =`Ratings: 	&#11088; ${item.rating}`;
+
+    let wishlist = document.createElement("p");
+    wishlist.innerHTML = `	&#9825;	 Save to wishlist`;
+
+    let remove = document.createElement("button");
+    remove.setAttribute("id","removefromcart");
+    remove.innerText='Remove';
+
+    let removewish = document.createElement("div");
+    removewish.setAttribute("id","removewish")
+    removewish.append(wishlist,remove)
+
+  let pricediv = document.createElement("div");
+  pricediv.setAttribute("id","pricediv");
+
+
+
+  ////  function for plus and minus items .///////////////////////////////
+
+   plus.addEventListener("click",function(){
+        console.log("working");
+        count++;
+        quantity.innerHTML = count;
+        // console.log(count);
+        let totalnetprice =document.getElementById("totalnetprice");
+
+        totalnetprice.innerText= +totalnetprice.innerText+item.price;
+        document.getElementById("bagtotalprice").innerHTML= `₹ ${totalnetprice.innerText}`;
+    document.getElementById("bagsubtotalprice").innerHTML= `₹ ${totalnetprice.innerText}`;
+    localStorage.setItem("total",JSON.stringify(+totalnetprice.innerText));
+    });
+    minus.addEventListener("click",function(){
+        console.log("working2")
+        if(count > 1){
+            count--;
+            quantity.innerHTML = count;
+        let totalnetprice =document.getElementById("totalnetprice");
+        totalnetprice.innerText=+totalnetprice.innerText-(item.price);
+        document.getElementById("bagtotalprice").innerHTML= `₹ ${totalnetprice.innerText}`;
+    document.getElementById("bagsubtotalprice").innerHTML= `₹ ${totalnetprice.innerText}`;
+    localStorage.setItem("total",JSON.stringify(+totalnetprice.innerText));
+        }
+       
+        
+        
+    })
+  
+  ////////////////////////remove from cart  function  //////////////////////////
+     remove.addEventListener("click",function(){
+         cartproduct.innerHTML =null;
+         mobileDataarr.splice(index,1);
+        window.location.href="./cart.html";
+       
+            let totalnetprice =document.getElementById("totalnetprice");
+        totalnetprice.innerText= +totalnetprice.innerText-item.price;
+
+        document.getElementById("bagtotalprice").innerHTML= `₹ ${totalnetprice.innerText}`;
+    document.getElementById("bagsubtotalprice").innerHTML= `₹ ${totalnetprice.innerText}`;
+        localStorage.setItem("selected",JSON.stringify(mobileDataarr));
+         localStorage.setItem("mobileDataarr",JSON.stringify(mobileDataarr));
+         let length= mobileDataarr.length;
+         localStorage.setItem("cart",length)
+         display()
+     })
+
+      
+    // let totalnetprice =document.getElementById("totalnetprice");
+    // totalnetprice.innerText=  total;
+  
+
+
+    strikeprice.innerHTML =`₹ ${item.price + 5000}`;
+    document.getElementById("bagtotalprice").innerHTML= `₹ ${total}`;
+    document.getElementById("bagsubtotalprice").innerHTML= `₹ ${total}`;
+    
+    totalnetprice.innerText= total;
+   
+    pricediv.append(price,strikeprice);
+   innerdiv.append(name,title,pricediv,quantdiv,rating,removewish);
+   div.append(image,innerdiv)
+   cartproduct.append(div)
+})
+}
+
+ /// go to checkout page////////////////////////////////
+  document.getElementById("gotocheckoutpage").addEventListener("click",function(){
+      window.location.href= "./checkout.html"
+  })
+
+//   let cartnumb= document.querySelector(".numb").innerText= length;
+
+
+////////////////// get this local storage to  checkout page for total cart value => || ////////
+// localStorage.setItem("total",JSON.stringify(+totalnetprice.innerText));
+
+</script>
+
+
+
+
+<!-- ////// navbar and footer js ///////////////////// -->
+
+<script src="./scripts/navbar.js"></script>
+
+<script type="module">
+  
+  import footerf from "../components/footer.js";
+ 
+  let footerappendhere = document.getElementById("footerappendhere");
+
+  footerappendhere.innerHTML = footerf()
+
+
+
+
+</script>

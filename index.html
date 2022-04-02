@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site for Lifestyle</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="./styles/carousel.css">
+
+    <link rel="stylesheet" href="./styles/product.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap">
+
+    <link rel="icon" href="https://www.tatacliq.com/favicon.ico" type="png">
+
+
+
+    <!-- Optional theme -->
+
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+
+
+    <!-- Latest compiled and minified JavaScript -->
+
+
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet"> -->
+
+
+
+</head>
+
+<body>
+    <!-- --------- Nav Bar starts ------------------->
+    <div>
+        <nav class="header">
+            <div class="logo">
+                <img onclick="location.href='index.html'"
+                    src="https://www.dealsmagnet.com/images/16U5lg5K/2022/January/15/large/flat-rs-500-off-on-minimum-order-value-new-users.jpg"
+                    alt="">
+            </div>
+            <!-- responsive nav -->
+            <div class="mob-nav">
+                <div onclick="location.href='Skincare.html'">Women's Skincare</div>
+                <div onclick="location.href='mensGrooming.html'">Mans Fashion</div>
+                <div onclick="location.href='kids.html'">Kid's Fashion</div>
+                <div onclick="location.href='ele.html'">Electronics</div>
+                <div class="mob-sign" onclick="ope()">Sign In / SignUp</div>
+            </div>
+            <!-- responsive nav -->
+            <div class="nav-right">
+                <div class="up-nav">
+                    <div class="tata-luxury-page">
+                        <a href="#">Tata CLiQ Luxury</a>
+                    </div>
+                    <!--login and track tabs-->
+                    <div class="login-and-tracktab">
+                        <div class="tata-luxury-page">
+                            <a href="#">CLiQ Cash</a>
+                        </div>
+                        <div class="tata-luxury-page" onclick="ope()">
+                            <a href="#">Gift Card</a>
+                        </div>
+                        <div class="tata-luxury-page" onclick="ope()">
+                            <a href="#">CLiQ Care</a>
+                        </div>
+                        <div class="tata-luxury-page" onclick="ope()">
+                            <a href="#">Track Orders</a>
+                        </div>
+                        <div class="tata-luxury-page sig" onclick="ope()" style="height: 40px;cursor: pointer;">
+
+                            <a href="#" id="sign">Sign in / Sign Up</a>
+                        </div>
+                        <div class="accounts">
+                        </div>
+                    </div>
+                </div>
+                <div class="down-nav">
+                    <div class="dropdowns">
+                        <div class="category" onmouseover="show()" onmouseout="hide()">Categories
+                            <div class="img"></div>
+                            <div class="category-expand">
+                                <div class="sub-category">
+                                    <div class="sub-category-value black" onmouseover="show(0)" onmouseout="hide(0)">
+                                        Women's Fashion
+                                        <div class="arrow arrow-icon"></div>
+                                    </div>
+                                    <div class="sub-category-value" onmouseover="show(1)" onmouseout="hide(1)">Men's
+                                        Fashion
+                                        <div class="arrow"></div>
+                                    </div>
+                                    <div class="sub-category-value" onmouseover="show(2)" onmouseout="hide(2)">TV &
+                                        Appliances
+                                        <div class="arrow "></div>
+                                    </div>
+                                    <div class="sub-category-value" onmouseover="show(3)" onmouseout="hide(3)">Mobile
+                                        phones
+                                        <div class="arrow "></div>
+                                    </div>
+                                </div>
+                                <!--  sub category sub values   -->
+                                <div class="sub-category-option ">
+                                    <section class="show">
+                                        <div class="sub-category-option-header">Ethnic Wear</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Kurtas &
+                                            Kurtis</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Suits Sets
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sarees</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Lehenga Sets
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Bottom</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Dupattas
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Blouse &
+                                            Dress</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Inner &
+                                            Nightwear</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Camisole
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sleeping &
+                                            Robes</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Shapewear
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Custom
+                                            clothes</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Western Wear
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Top & Tees
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Dress</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Shirts</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Pant &
+                                            Trousers</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Jeans</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Leggings
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Jumpsuits
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Skirts</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Jacket &
+                                            Blazers</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">shrugs</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sweatshirts
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sports Shoes
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Flip Flops
+                                        </div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Watches
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Dressy
+                                            Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">casual
+                                            Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Smart Watches
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Formal
+                                            Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sports
+                                            Watches</div>
+                                        <!-- <div class="sub-category-option-value"  onclick="location.href='#'">wd</div> -->
+                                    </section>
+                                    <section>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Footwear
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Casual Shoes
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sneakers
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Formal Shoes
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Training
+                                            Shoes</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Running Shoes
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sports Shoes
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Flip Flops
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Boots</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Sports Wear
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">T-shirts &
+                                            Jersys</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Shorts</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sports
+                                            jackets</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Gym Gear
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Joggers</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Clothing
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">T-shirts &
+                                            Polos</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Casual Shirts
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Jeans</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Trousers
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Shorts</div>
+
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Watches
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Workwear
+                                            Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">casual
+                                            Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Smart Watches
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Formal
+                                            Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sports
+                                            Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Digital
+                                            Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Partywear
+                                            Watches</div>
+
+                                    </section>
+                                    <section>
+
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Home
+                                            Appliances Store</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Drapes</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Chairs</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Pillow</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Throw</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Bedsheets
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Table Lamp
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Armoire</div>
+
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Televisions
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Smart TVs
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">4K Ultra HD
+                                            TVs</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Android TVs
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Curveshape
+                                            TVs</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">OLED &amp;
+                                            QLED TVs</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Bestselling
+                                            TVs</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Audio Store
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Soundbars
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Home Theatres
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Party
+                                            Speakers</div>
+
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Kitchen
+                                            Appliances Store</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Kitchen
+                                            Appliances</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Microwave
+                                            Ovens</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Mixers &amp;
+                                            Grinders</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Electric
+                                            Cookers</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Food &amp;
+                                            Roti Makers</div>
+
+                                    </section>
+                                    <section>
+
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Mobile
+                                            Phones Store</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Mobile Phones
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">iPhone</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">New Launches
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Flagship
+                                            Phones</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Feature
+                                            Phones</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Shop by
+                                            Brand</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Apple</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Samsung</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Vivo</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Oppo</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Realme</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Nokia</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Xiaomi</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">OnePlus</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Laptops
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">NoteBooks
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Ultra
+                                            Portable</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">ChromeBook
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Netbook</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">MacBook</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Tablet as a
+                                            laptops</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Shop by
+                                            Brands</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">HP</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Dell</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Lenavo</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Asus</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Acer</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Apple</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">MSI</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Microsoft
+                                        </div>
+
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Accessories
+                                            Store</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Cases &amp;
+                                            Covers</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Screen
+                                            Protectors</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Chargers
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Cables</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Power Banks
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Memory Cards
+                                        </div>
+
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brands" onmouseover="showb()" onmouseout="hideb()">Brands
+                            <div class="imgg"></div>
+                            <div class="category-expand b">
+                                <div class="sub-category bs">
+                                    <div class="sub-category-value" onmouseover="showb(4)" onmouseout="hideb(8)">TV &
+                                        Appliances
+                                        <div class="arrow arrow-icon"></div>
+                                    </div>
+                                    <div class="sub-category-value" onmouseover="showb(5)" onmouseout="hideb(9)">
+                                        Electronics
+                                        <div class="arrow"></div>
+                                    </div>
+                                </div>
+                                <!--  sub category sub values   -->
+                                <div class="sub-category-option ">
+                                    <section class="show">
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Popular
+                                            Brands</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Lg</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Samsung</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sony</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Hitachi</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Daikin</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Carrier</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Blue Star
+                                        </div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Featured
+                                            brand</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">VU</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Lloyd</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">TCL</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sanyo</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Godrej</div>
+
+                                    </section>
+                                    <section>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Popular
+                                            brands</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Apple</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Oppo</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Xiaomi</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">HP</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Dell</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Asus</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Canon</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Featured
+                                            brands</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Nokia</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Motorola
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Boult Audio
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Acer</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Microsoft
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Noise</div>
+
+                                    </section>
+                                </div>
+                                <div class="brand-logos">
+                                    <Blogo class="showb">
+                                        <div class="elec-logo">
+                                            <img src="icons/tv& (1).jpg" alt="">
+                                        </div>
+                                        <div class="elec-logo">
+                                            <img src="icons/tv& (2).jpg" alt="">
+                                        </div>
+                                        <div class="elec-logo">
+                                            <img src="icons/tv& (4).jpg" alt="">
+                                        </div>
+                                    </Blogo>
+                                    <Blogo>
+                                        <div class="elec-logo">
+                                            <img src="icons/elec (2).jpg" alt="">
+                                        </div>
+                                        <div class="elec-logo">
+                                            <img src="icons/elec (6).jpg" alt="">
+                                        </div>
+                                        <div class="elec-logo">
+                                            <img src="icons/elec (1).jpg" alt="">
+                                        </div>
+                                    </Blogo>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cross"></div>
+                    <div class="search-cart-page">
+                        <div class="cart-whistlist">
+                            <div class="whist-list">
+                                <img src="icons/whistlistt.svg" alt="">
+                            </div>
+                            <div class="cart">
+                                <a href="#">
+                                    <span class="numb">0</span>
+                                    <img src="icons/cart icon.svg" alt="" style="width: 20px;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <input type="text" id="search-expand" onkeydown="myFunction(event)" autocomplete="off"
+                                placeholder="Search">
+                            <div class="search-icon">
+                                <img src="icons/searchwhite.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <!-- Login and Signup Page Start  -->
+        <div class="model-box modelhidden">
+            <div class="pcontainer">
+                <i class="far fa-times-circle bd" onclick="clos()"></i>
+                <div class="signup">
+                    <h1>Welcome To TataCliq</h1>
+                    <p>Please enter Email address</p>
+                    <div class="signup-form">
+                        <form onsubmit="login(event)" id="cont2"></form>
+                        <form id="cont">
+                            <input id="name" name="name" type="text" placeholder="Name" />
+                            <input id="mail" name="mail" type="email" placeholder="Email" />
+                            <input id="pass" name="pass" type="password" placeholder="Password" />
+
+                        </form>
+                        <div class="tandc">
+                            By continue you are agree to our
+                            <a href="#" class="login-btnlink">Terms of Services</a> &
+                            <a href="#" class="login-btnlink">Privacy Policy</a>
+                        </div>
+                        <button id="sign-up" onclick="signupdata(event)">Sign-Up</button>
+                        <h3 id="chnge-mobile"><span class="span-lg">or</span> <span class="span-lg2">login to your
+                                account</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="keep">
+            <div class="speech-bubble">
+                <div class="register" onclick="ope()">Login/ Register</div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- Nav Bar Ends ------------------->
+
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <a href="/index.html"><img src="https://assets.tatacliq.com/medias/sys_master/images/33255002767390.jpg"
+                    style="width:100%"></a>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://assets.tatacliq.com/medias/sys_master/images/33255002832926.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://assets.tatacliq.com/medias/sys_master/images/33255002898462.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://assets.tatacliq.com/medias/sys_master/images/33255002963998.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://assets.tatacliq.com/medias/sys_master/images/33255003029534.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://assets.tatacliq.com/medias/sys_master/images/33255003095070.jpg" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+        <!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <!-- <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div> -->
+    <div class="categories-hp">
+        <div>
+            <a href="/"> <img class="chp"
+                    src="https://assets.tatacliq.com/medias/sys_master/images/33220958814238.jpg" /></a>
+        </div>
+        <div>
+            <a href="./smartphones.html"><img class="chp"
+                    src="https://assets.tatacliq.com/medias/sys_master/images/33220958879774.jpg" /></a>
+        </div>
+        <div>
+            <a href="/"><img class="chp"
+                    src="https://assets.tatacliq.com/medias/sys_master/images/33220958945310.jpg" /></a>
+        </div>
+        <div>
+            <a href="/"><img class="chp"
+                    src="https://assets.tatacliq.com/medias/sys_master/images/33220959010846.jpg" /></a>
+        </div>
+        <div>
+            <a href="/"><img class="chp"
+                    src="https://assets.tatacliq.com/medias/sys_master/images/33220959076382.jpg" /></a>
+        </div>
+        <div>
+            <a href="/"><img class="chp"
+                    src="https://assets.tatacliq.com/medias/sys_master/images/33220959141918.jpg" /></a>
+        </div>
+        <div>
+            <a href="/"> <img class="chp"
+                    src="https://assets.tatacliq.com/medias/sys_master/images/33220959207454.jpg" /></a>
+        </div>
+        <div>
+            <a href="/"><img class="chp"
+                    src="https://assets.tatacliq.com/medias/sys_master/images/33220959272990.jpg" /></a>
+        </div>
+        <div>
+            <a href="/"><img class="chp"
+                    src="https://assets.tatacliq.com/medias/sys_master/images/33220959338526.jpg" /></a>
+        </div>
+    </div>
+
+    <div class="offers">
+        <div>
+            <img src="https://assets.tatacliq.com/medias/sys_master/images/33206452453406.jpg" />
+        </div>
+        <div>
+            <img src="https://assets.tatacliq.com/medias/sys_master/images/33158587318302.jpg" />
+        </div>
+        <div>
+            <img src="https://assets.tatacliq.com/medias/sys_master/images/33249942634526.jpg" />
+        </div>
+    </div>
+
+    <div>
+        <div class="caption">
+            <h3 class="caption-heading1">D&nbspE&nbspA&nbspL&nbspS&nbsp&nbsp&nbsp&nbspW&nbspH&nbspE&nbspE&nbspL</h3>
+            <h3 class="caption-heading2">Grab these before they're gone</h3>
+        </div>
+    </div>
+
+    <div class="deals">
+        <div class="zoom">
+            <img class="deals-image" src="https://assets.tatacliq.com/medias/sys_master/images/33242657030174.jpg" />
+        </div>
+        <div class="zoom">
+            <img class="deals-image" src="https://assets.tatacliq.com/medias/sys_master/images/33249919696926.jpg" />
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="carousel carousel-showmanymoveone slide" id="itemslider">
+                    <div class="carousel-inner">
+
+                        <div class="item active">
+                            <div class="col-xs-12 col-sm-6 col-md-2">
+                                <a href="#"><img
+                                        src="https://assets.tatacliq.com/medias/sys_master/images/33249983103006.jpg"
+                                        class="img-responsive center-block"></a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-2">
+                                <a href="#"><img
+                                        src="https://assets.tatacliq.com/medias/sys_master/images/33189187223582.jpg"
+                                        class="img-responsive center-block"></a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-2">
+                                <a href="#"><img
+                                        src="https://assets.tatacliq.com/medias/sys_master/images/33249997586462.jpg"
+                                        class="img-responsive center-block"></a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-2">
+                                <a href="#"><img
+                                        src="https://assets.tatacliq.com/medias/sys_master/images/33242654146590.jpg"
+                                        class="img-responsive center-block"></a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-2">
+                                <a href="#"><img
+                                        src="https://assets.tatacliq.com/medias/sys_master/images/33186532261918.jpg"
+                                        class="img-responsive center-block"></a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-2">
+                                <a href="#"><img
+                                        src="https://assets.tatacliq.com/medias/sys_master/images/33215805292574.jpg"
+                                        class="img-responsive center-block"></a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-2">
+                                <a href="#"><img
+                                        src="https://assets.tatacliq.com/medias/sys_master/images/33119176228894.jpg"
+                                        class="img-responsive center-block"></a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-2">
+                                <a href="#"><img
+                                        src="https://assets.tatacliq.com/medias/sys_master/images/33249944666142.jpg"
+                                        class="img-responsive center-block"></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="slider-control">
+                        <a class="left carousel-control" href="#itemslider" data-slide="prev"><img
+                                src="https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_402-512.png"
+                                alt="Left" class="img-responsive"></a>
+                        <a class="right carousel-control" href="#itemslider" data-slide="next"><img
+                                src="http://pixsector.com/cache/81183b13/avcc910c4ee5888b858fe.png" alt="Right"
+                                class="img-responsive"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="caption">
+            <h3 class="caption-heading1">
+                A&nbspL&nbspL&nbsp&nbsp&nbspA&nbspB&nbspO&nbspUT&nbsp&nbsp&nbspF&nbspA&nbspS&nbspH&nbspI&nbspO&nbspN
+            </h3>
+            <h3 class="caption-heading2">Styles to suit every wardrobe</h3>
+        </div>
+    </div>
+    <div class="fashion-hp">
+        <div>
+            <img class="fimg" src="https://assets.tatacliq.com/medias/sys_master/images/33249943158814.jpg" />
+        </div>
+        <div>
+            <img class="fimg" src="https://assets.tatacliq.com/medias/sys_master/images/33249943453726.jpg" />
+        </div>
+        <div>
+            <img class="fimg" src="https://assets.tatacliq.com/medias/sys_master/images/33249943224350.jpg" />
+        </div>
+        <div>
+            <img class="fimg" src="https://assets.tatacliq.com/medias/sys_master/images/33249943289886.jpg" />
+        </div>
+        <div>
+            <img class="fimg" src="https://assets.tatacliq.com/medias/sys_master/images/33242644774942.jpg" />
+        </div>
+        <div>
+            <img class="fimg" src="https://assets.tatacliq.com/medias/sys_master/images/33242644709406.jpg" />
+        </div>
+        <div>
+            <img class="fimg" src="https://assets.tatacliq.com/medias/sys_master/images/33242644840478.jpg" />
+        </div>
+        <div>
+            <img class="fimg" src="https://assets.tatacliq.com/medias/sys_master/images/33242644906014.jpg" />
+        </div>
+    </div>
+
+
+    <div class="categories-hp2">
+        <div>
+            <a href="/"> <img class="category2"
+                    src="https://assets.tatacliq.com/medias/sys_master/images/33139631980574.jpg" /></a>
+        </div>
+        <div>
+            <a href="/"><img class="category2"
+                    src="https://assets.tatacliq.com/medias/sys_master/images/33139632046110.jpg" /></a>
+        </div>
+        <div>
+            <a href="/"><img class="category2"
+                    src="https://assets.tatacliq.com/medias/sys_master/images/33139632111646.jpg" /></a>
+        </div>
+        <div>
+            <a href="/"><img class="category2"
+                    src="https://assets.tatacliq.com/medias/sys_master/images/33139632242718.jpg" /></a>
+        </div>
+    </div>
+
+    <div>
+        <div class="caption">
+            <h3 class="caption-heading1">
+                E&nbspL&nbspE&nbspC&nbspT&nbspR&nbspO&nbspN&nbspI&nbspC&nbspS&nbsp&nbsp&nbsp
+                U&nbspP&nbspG&nbspR&nbspA&nbspD&nbspE </h3>
+            <h3 class="caption-heading2">Tech that amps up your productivity</h3>
+        </div>
+    </div>
+
+    <div class="techproducts">
+        <div>
+            <img src="https://assets.tatacliq.com/medias/sys_master/images/33249993392158.jpg" />
+        </div>
+        <div>
+            <img src="https://assets.tatacliq.com/medias/sys_master/images/33249993457694.jpg" />
+        </div>
+        <div>
+            <img src="https://assets.tatacliq.com/medias/sys_master/images/33249993523230.jpg" />
+        </div>
+        <div>
+            <img src="https://assets.tatacliq.com/medias/sys_master/images/33249993588766.jpg" />
+        </div>
+        <div>
+            <img src="https://assets.tatacliq.com/medias/sys_master/images/33249993719838.jpg" />
+        </div>
+        <div>
+            <img src="https://assets.tatacliq.com/medias/sys_master/images/33249993785374.jpg" />
+        </div>
+        <div>
+            <img src="https://assets.tatacliq.com/medias/sys_master/images/33249993850910.jpg" />
+        </div>
+        <div>
+            <img src="https://assets.tatacliq.com/medias/sys_master/images/33250008006686.jpg" />
+        </div>
+    </div>
+
+    <!-- Footer starts  -->
+    <div id="low-footer"></div>
+</body>
+
+</html>
+<script type="module">
+    let footer = document.querySelector("#low-footer")
+    import footerf from "./components/footer.js"
+    footer.innerHTML = footerf()
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+<script src="./scripts/navbar.js"></script>
+<script src="./scripts/carousel.js"></script>
+<script src="./scripts/productslider.js"></script>
+<script src="./scripts/navbar.js"></script>

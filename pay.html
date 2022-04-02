@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/cartpage.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <style>
+        #container1 {
+            display: flex;
+            gap: 1.875rem;
+
+        }
+
+        #fit {
+            background-color: rgb(236, 236, 236);
+            margin-left: 6.25rem;
+            
+        }
+
+        #fit>div>div>div {
+            padding: 1.25rem 0rem 0rem 1.25rem
+        }
+
+        #left1 {
+
+
+            width: 60%;
+            height: 37.5rem;
+        }
+
+        /* 
+        #right1 {
+
+            background-color: white;
+            width: 23%;
+            height: 500px;
+            margin-left: 0.625rem;
+            border: 1px solid red;
+        } */
+
+        #q,
+        .q2 {
+
+            background-color: white;
+            width: 100%;
+            height: 7.25rem;
+        }
+
+        #q4 {
+
+            background-color: white;
+            width: 100%;
+            height: 10.375rem;
+
+
+        }
+
+        #q4>div {
+            gap: 1.25rem;
+            margin-bottom: 1.0rem;
+
+
+        }
+
+        #left1>div {
+            margin-bottom: 1.25rem;
+        }
+
+        #select1 {
+            height: 6.25rem;
+            width: 100%;
+
+            background-color: white;
+
+        }
+
+        #form1>input {
+
+            margin-left: 1.25rem;
+            padding: 0.5rem;
+            width: 12.5rem;
+
+        }
+
+        #gift {
+            border-radius: 0.625rem;
+           
+        }
+
+        .q2 {
+            height: 12.5rem;
+        }
+
+        #form2 {
+            width: 100%;
+            height: 12.5rem;
+
+
+        }
+
+        #form2>input,
+        #year,
+        #month {
+            border-radius: 0.625rem;
+
+        }
+
+        #card {
+            width: 18.75rem;
+            margin-right: 3.125rem;
+            padding: 0.5rem;
+            margin-top: 1.25rem;
+        }
+
+        #month1 {
+            width: 6.25rem;
+        }
+
+        select {
+            width: 12.5rem;
+            padding: 0.5rem;
+        }
+
+        #card1 {
+            padding: 0.5rem;
+        }
+
+        #sub {
+            padding: 0.5rem;
+            border-radius: 0.625rem;
+            margin-left: 6.25rem;
+            background-color: rgb(255, 23, 68);
+            color: white;
+            width: 8.125rem;
+        }
+
+        #gift {
+            display: flex;
+        }
+
+        #card2 {
+            border-radius: 0.625rem;
+        }
+
+        #im1 {
+            margin-top: 0.625rem;
+        }
+
+        #btn {
+            margin-left: 500px;
+            padding: 0.5rem;
+            border-radius: 0.625rem;
+            background-color: rgb(255, 23, 68);
+            color: white;
+            width: 8.125rem;
+        }
+
+        #masai {
+            border-radius: 0.625rem;
+        }
+
+        p {
+            font-family: sans-serif;
+        }
+
+        #right1>div {
+
+            display: flex;
+            gap: 4.375rem;
+        }
+
+        #right1>div>div {
+
+            width: 50%;
+            height: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+     
+    <!-- --------- Nav Bar starts ------------------->
+    <div>
+        <nav class="header">
+            <div class="logo">
+                <img onclick="location.href='index.html'"
+                    src="https://www.dealsmagnet.com/images/16U5lg5K/2022/January/15/large/flat-rs-500-off-on-minimum-order-value-new-users.jpg"
+                    alt="">
+            </div>
+            <!-- responsive nav -->
+            <div class="mob-nav">
+                <div onclick="location.href='#'">Women's Skincare</div>
+                <div onclick="location.href='#'">Mans Fashion</div>
+                <div onclick="location.href='#'">Kid's Fashion</div>
+                <div onclick="location.href='#'">Electronics</div>
+                <div class="mob-sign" onclick="ope()">Sign In / SignUp</div>
+            </div>
+            <!-- responsive nav -->
+            <div class="nav-right">
+                <div class="up-nav">
+                    <div class="tata-luxury-page">
+                        <a href="#">Tata CLiQ Luxury</a>
+                    </div>
+                    <!--login and track tabs-->
+                    <div class="login-and-tracktab">
+                        <div class="tata-luxury-page">
+                            <a href="#">CLiQ Cash</a>
+                        </div>
+                        <div class="tata-luxury-page" onclick="ope()">
+                            <a href="#">Gift Card</a>
+                        </div>
+                        <div class="tata-luxury-page" onclick="ope()">
+                            <a href="#">CLiQ Care</a>
+                        </div>
+                        <div class="tata-luxury-page" onclick="ope()">
+                            <a href="#">Track Orders</a>
+                        </div>
+                        <div class="tata-luxury-page sig" onclick="ope()" style="height: 40px;cursor: pointer;">
+
+                            <a href="#" id="sign">Sign in / Sign Up</a>
+                        </div>
+                        <div class="accounts">
+                        </div>
+                    </div>
+                </div>
+                <div class="down-nav">
+                    <div class="dropdowns">
+                        <div class="category" onmouseover="show()" onmouseout="hide()">Categories
+                            <div class="img"></div>
+                            <div class="category-expand">
+                                <div class="sub-category">
+                                    <div class="sub-category-value black" onmouseover="show(0)" onmouseout="hide(0)">
+                                        Women's Fashion
+                                        <div class="parrow parrow-icon"></div>
+                                    </div>
+                                    <div class="sub-category-value" onmouseover="show(1)" onmouseout="hide(1)">Men's
+                                        Fashion
+                                        <div class="parrow"></div>
+                                    </div>
+                                    <div class="sub-category-value" onmouseover="show(2)" onmouseout="hide(2)">TV &
+                                        Appliances
+                                        <div class="parrow "></div>
+                                    </div>
+                                    <div class="sub-category-value" onmouseover="show(3)" onmouseout="hide(3)">Mobile
+                                        phones
+                                        <div class="parrow "></div>
+                                    </div>
+                                </div>
+                                <!--  sub category sub values   -->
+                                <div class="sub-category-option ">
+                                    <section class="show">
+                                        <div class="sub-category-option-header">Ethnic Wear</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Kurtas &
+                                            Kurtis</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Suits Sets
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sarees</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Lehenga Sets
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Bottom</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Dupattas
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Blouse &
+                                            Dress</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Inner &
+                                            Nightwear</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Camisole
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sleeping &
+                                            Robes</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Shapewear
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Custom
+                                            clothes</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Western Wear
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Top & Tees
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Dress</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Shirts</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Pant &
+                                            Trousers</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Jeans</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Leggings
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Jumpsuits
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Skirts</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Jacket &
+                                            Blazers</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">shrugs</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sweatshirts
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sports Shoes
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Flip Flops
+                                        </div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Watches
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Dressy
+                                            Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">casual
+                                            Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Smart Watches
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Formal
+                                            Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sports
+                                            Watches</div>
+                                        <!-- <div class="sub-category-option-value"  onclick="location.href='#'">wd</div> -->
+                                    </section>
+                                    <section>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Footwear
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Casual Shoes
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sneakers
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Formal Shoes
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Training
+                                            Shoes</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Running Shoes
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sports Shoes
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Flip Flops
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Boots</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Sports Wear
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">T-shirts &
+                                            Jersys</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Shorts</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sports
+                                            jackets</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Gym Gear
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Joggers</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Clothing
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">T-shirts &
+                                            Polos</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Casual Shirts
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Jeans</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Trousers
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Shorts</div>
+
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Watches
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Workwear
+                                            Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">casual
+                                            Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Smart Watches
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Formal
+                                            Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sports
+                                            Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Digital
+                                            Watches</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Partywear
+                                            Watches</div>
+
+                                    </section>
+                                    <section>
+
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Home
+                                            Appliances Store</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Drapes</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Chairs</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Pillow</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Throw</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Bedsheets
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Table Lamp
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Armoire</div>
+
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Televisions
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Smart TVs
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">4K Ultra HD
+                                            TVs</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Android TVs
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Curveshape
+                                            TVs</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">OLED &amp;
+                                            QLED TVs</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Bestselling
+                                            TVs</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Audio Store
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Soundbars
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Home Theatres
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Party
+                                            Speakers</div>
+
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Kitchen
+                                            Appliances Store</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Kitchen
+                                            Appliances</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Microwave
+                                            Ovens</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Mixers &amp;
+                                            Grinders</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Electric
+                                            Cookers</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Food &amp;
+                                            Roti Makers</div>
+
+                                    </section>
+                                    <section>
+
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Mobile
+                                            Phones Store</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Mobile Phones
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">iPhone</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">New Launches
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Flagship
+                                            Phones</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Feature
+                                            Phones</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Shop by
+                                            Brand</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Apple</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Samsung</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Vivo</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Oppo</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Realme</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Nokia</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Xiaomi</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">OnePlus</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Laptops
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">NoteBooks
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Ultra
+                                            Portable</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">ChromeBook
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Netbook</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">MacBook</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Tablet as a
+                                            laptops</div>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Shop by
+                                            Brands</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">HP</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Dell</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Lenavo</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Asus</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Acer</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Apple</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">MSI</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Microsoft
+                                        </div>
+
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Accessories
+                                            Store</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Cases &amp;
+                                            Covers</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Screen
+                                            Protectors</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Chargers
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Cables</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Power Banks
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Memory Cards
+                                        </div>
+
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brands" onmouseover="showb()" onmouseout="hideb()">Brands
+                            <div class="imgg"></div>
+                            <div class="category-expand b">
+                                <div class="sub-category bs">
+                                    <div class="sub-category-value" onmouseover="showb(4)" onmouseout="hideb(8)">TV &
+                                        Appliances
+                                        <div class="parrow parrow-icon"></div>
+                                    </div>
+                                    <div class="sub-category-value" onmouseover="showb(5)" onmouseout="hideb(9)">
+                                        Electronics
+                                        <div class="parrow"></div>
+                                    </div>
+                                </div>
+                                <!--  sub category sub values   -->
+                                <div class="sub-category-option ">
+                                    <section class="show">
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Popular
+                                            Brands</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Lg</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Samsung</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sony</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Hitachi</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Daikin</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Carrier</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Blue Star
+                                        </div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Featured
+                                            brand</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">VU</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Lloyd</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">TCL</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Sanyo</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Godrej</div>
+
+                                    </section>
+                                    <section>
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Popular
+                                            brands</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Apple</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Oppo</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Xiaomi</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">HP</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Dell</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Asus</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Canon</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+                                        <div>&nbsp;</div>
+
+                                        <div class="sub-category-option-header" onclick="location.href='#'">Featured
+                                            brands</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Nokia</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Motorola
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Boult Audio
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Acer</div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Microsoft
+                                        </div>
+                                        <div class="sub-category-option-value" onclick="location.href='#'">Noise</div>
+
+                                    </section>
+                                </div>
+                                <div class="brand-logos">
+                                    <Blogo class="showb">
+                                        <div class="elec-logo">
+                                            <img src="icons/tv& (1).jpg" alt="">
+                                        </div>
+                                        <div class="elec-logo">
+                                            <img src="icons/tv& (2).jpg" alt="">
+                                        </div>
+                                        <div class="elec-logo">
+                                            <img src="icons/tv& (4).jpg" alt="">
+                                        </div>
+                                    </Blogo>
+                                    <Blogo>
+                                        <div class="elec-logo">
+                                            <img src="icons/elec (2).jpg" alt="">
+                                        </div>
+                                        <div class="elec-logo">
+                                            <img src="icons/elec (6).jpg" alt="">
+                                        </div>
+                                        <div class="elec-logo">
+                                            <img src="icons/elec (1).jpg" alt="">
+                                        </div>
+                                    </Blogo>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cross"></div>
+                    <div class="search-cart-page">
+                        <div class="cart-whistlist">
+                            <div class="whist-list">
+                                <img src="icons/whistlistt.svg" alt="">
+                            </div>
+                            <div class="cart">
+                                <a href="#">
+                                    <span class="numb">0</span>
+                                    <img src="icons/cart icon.svg" alt="" style="width: 20px;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <input type="text" id="search-expand" onkeydown="myFunction(event)" autocomplete="off"
+                                placeholder="Search">
+                            <div class="search-icon">
+                                <img src="icons/searchwhite.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <!-- Login and Signup Page Start  -->
+        <div class="model-box modelhidden">
+            <div class="pcontainer">
+                <i class="far fa-times-circle bd" onclick="clos()"></i>
+                <div class="signup">
+                    <h1>Welcome To TataCliq</h1>
+                    <p>Please enter Email address</p>
+                    <div class="signup-form">
+                        <form onsubmit="login(event)" id="cont2"></form>
+                        <form id="cont">
+                            <input id="name" name="name" type="text" placeholder="Name" />
+                            <input id="mail" name="mail" type="email" placeholder="Email" />
+                            <input id="pass" name="pass" type="password" placeholder="Password" />
+
+                        </form>
+                        <div class="tandc">
+                            By continue you are agree to our
+                            <a href="#" class="login-btnlink">Terms of Services</a> &
+                            <a href="#" class="login-btnlink">Privacy Policy</a>
+                        </div>
+                        <button id="sign-up" onclick="signupdata(event)">Sign-Up</button>
+                        <h3 id="chnge-mobile"><span class="span-lg">or</span> <span class="span-lg2">login to your
+                                account</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="keep">
+            <div class="speech-bubble">
+                <div class="register" onclick="ope()">Login/ Register</div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- Nav Bar Ends ------------------->
+   <div id="fit">
+    <h1>Checkout</h1>
+    <div id="container1">
+        <div id="left1">
+            <div id="q">
+                <div id="gift">
+                    <img id="im1" height="40px"
+                        src="https://t4.ftcdn.net/jpg/03/03/72/17/240_F_303721767_iNO49Cr0bPrcZT9eIuTr0VUa5QXuK1es.jpg"
+                        alt="">
+                    <h3>Delivery Address</h3>
+
+
+                </div>
+                <p id="p1"></p>
+            </div>
+            <div id="q">
+                <div id="gift">
+                    <img id="im1" height="40px"
+                        src="https://t4.ftcdn.net/jpg/03/03/72/17/240_F_303721767_iNO49Cr0bPrcZT9eIuTr0VUa5QXuK1es.jpg"
+                        alt="">
+
+                    <h3>Delivery Mode</h3>
+
+                </div>
+                <p>Delivery will be day after tomorrow.</p>
+            </div>
+            <div id="q4">
+                <div id="gift">
+                    <img height="50rem" src="https://img.icons8.com/fluency/2x/wedding-gift.png" alt="">
+                    <h3>Have a gift card?</h3>
+                </div id="form1">
+                <!-- <form action="" id="form1">
+                 <input type="text" placeholder="Voucher number"> 
+                 <input type="text" placeholder="Voucher pin">
+                 <input type="submit" name="" id="card2" value="Add a gift card">
+             </form> -->
+                <select name="" id="masai">
+                    <option value="">select voucher</option>
+                    <option value="30">masai30</option>
+                    <option value="40">masai40</option>
+                    <option value="50">masai50</option>
+                </select>
+                <button id="btn" onclick="offer()">add gift card</button>
+
+            </div>
+            <div class="q2">
+                <form action="" id="form2">
+                    <h3>Payment Method</h3>
+                    <i class="fa fa-credit-card"> credit card</i>
+                    <br>
+                    <input type="text" name="" id="card" placeholder="Card Number">
+                    <select name="" id="month">
+                        <option id="month1" value="">Expiry Month</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select name="" id="year">
+                        <option value="Expiry Year">Expiry Year</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2030">2031</option>
+                        <option value="2032">2032</option>
+                        <option value="2033">2033</option>
+                    </select>
+                    <input type="text" name="" id="card" placeholder="Name on card">
+                    <input type="text" placeholder="CVV" id="card1">
+                    <input type="submit" value="Pay now" id="sub">
+                </form>
+
+            </div>
+        </div>
+        <!-- <div id="right1"> -->
+        <div>
+            <div class="makeitflex"><img width="60" src="./images/fast.png" alt="">
+                <h4>Congratulations!! Your order is eligible <br> for FREE Shipping!</h4>
+            </div>
+            <div>
+                <div class="nomargintop">
+                    <h4>Bag Total</h4>
+                    <p id="bagtotalprice">₹0</p>
+                </div>
+                <div class="nomargintop">
+                    <h4>Shipping Charge</h4>
+                    <p style="color:green;font-weight:bolder">FREE</p>
+                </div>
+                <div class="nomargintop">
+                    <h4>Bag Subtotal</h4>
+                    <p id="bagsubtotalprice">₹0</p>
+                </div>
+                <div class="nomargintop">
+                    <h4>Product Discount(s)</h4>
+                    <p>-₹5000.00</p>
+                </div>
+                <div class="nomargintop">
+                    <p style="color:green;">You will save ₹5000.00 on this order</p>
+                </div>
+            </div>
+            <div id="margingapdiv">
+                <div class="nomargintop">
+                    <div>
+                        <h2>Total:</h2>
+                        <h2 id="totalnetprice"></h2>
+                    </div><button id="checkoutbuttonincart">
+                        <span id="gotocheckoutpage">Checkout</span>
+                        <div class="liquid"></div>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <div>
+                <div>Bag Total</div>
+                <div>122</div>
+            </div>
+            <div> <div> shipping charge</div>
+                <div> free</div>
+            </div>
+            <div>
+
+
+            </div>
+            <div>
+
+
+            </div>
+            <div>
+                <h1 id="t2"></h1>
+            </div> -->
+
+        <!-- </div> -->
+    </div>
+   </div>
+</body>
+
+</html>
+<script src="./scripts/navbar.js"></script>
+<script>
+
+
+    var t = document.getElementById("form2").addEventListener("submit", submit1)
+    function submit1() {
+        event.preventDefault();
+        console.log("raam")
+        window.location.assign("sucess.html")
+    }
+
+    var total = JSON.parse(localStorage.getItem("total"));
+    //    var t4= document.getElementById("t2").textContent=`total amount is ${total}`
+    console.log("t:", total);
+    var dis = 0;
+    var per = 0;
+
+
+    // t4=document.querySelector("#t2").textContent=`total is ${t2}`
+    function offer() {
+        console.log("raam")
+        let t1 = document.querySelector("#masai").value;
+
+        if (t1 == 30) {
+            per = 30;
+            dis = 0;
+            show();
+        }
+        else if (t1 == 40) {
+            per = 40;
+            dis = 0;
+            show();
+
+        }
+        else if (t1 == 50) {
+            per = 50;
+            dis = 0;
+            show();
+        }
+        else {
+            dis = 0;
+            show();
+        }
+    }
+
+    ///               abhinav data right cornner start -------------------
+
+
+    document.getElementById("bagtotalprice").innerHTML = `₹ ${total}`;
+    document.getElementById("bagsubtotalprice").innerHTML = `₹ ${total}`;
+    document.getElementById("gotocheckoutpage").innerHTML = `₹ ${total}`;
+
+    ///               abhinav data right cornner start -------------------
+
+
+
+
+
+
+
+
+    show();
+
+    // offer()
+    function show() {
+        let ttt = total;
+        console.log("total", total)
+
+        var res = Math.ceil(((total) / 100) * (100 - per))
+        document.querySelector("#gotocheckoutpage").textContent = res;
+        document.querySelector("#bagtotalprice").textContent = res;
+        document.querySelector("#bagsubtotalprice").textContent = res;
+
+        console.log("total11", res)
+    }
+
+
+    let t5 = JSON.parse(localStorage.getItem("home"));
+    console.log("yyy", t5)
+    document.getElementById("p1").append(t5)
+
+
+</script>
