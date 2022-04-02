@@ -47,10 +47,13 @@ let Data = JSON.parse(localStorage.getItem("mobileData")) || [];
     });
   };
 
+  let selectedprod = JSON.parse(localStorage.getItem("selected"))  || []; 
+
   function addtocart(el) {
-    let selectedprod = [];
+  
     selectedprod.push(el);
     localStorage.setItem("selected", JSON.stringify(selectedprod));
+    window.location.href="./singleproduct.html"
   }
 
   function nsortItem() {
@@ -74,3 +77,6 @@ let Data = JSON.parse(localStorage.getItem("mobileData")) || [];
   }
 
   display(Data, mobiledatacont);
+  
+  let length=   localStorage.getItem("cart");
+    document.querySelector(".numb").innerText = length;

@@ -1,0 +1,278 @@
+body{
+    width: 100%;
+    /* margin:auto; */
+    margin-top: 3%;
+  
+    background-color: #ececec;
+}
+#singleproduct{
+    display:flex;
+    justify-content:space-around;
+    background-color: white;
+    padding-bottom:4%;
+    padding-top:4%;
+   
+}
+#abrandname{
+    font-size:25px;
+}
+#productname{
+
+    width: 100%;
+   height: auto;
+   color: #181818;
+   font-size: 18px;
+   line-height: 22px;
+   font-family: sans-serif;
+   font-weight: inherit;
+   display: inline-block;
+   
+}
+#productprice{
+    font-family: semibold;
+    font-size: 22px;
+    
+}
+#productdesc{
+    width:40%;
+  
+    
+}
+#imagedivproduct > img{
+    width: 100%;
+    height:500px;
+}
+#namenlike {
+    width: 100%;
+     display:flex;
+     justify-content:space-between; 
+    
+}
+#pricenshare {
+    width: 100%;
+     display:flex;
+     justify-content:space-between; 
+}
+#bigimage{
+    width:100%;
+    height:auto;
+    background-color: grey;
+}
+#heart:hover{
+   background-color:red;
+}
+#mrpnrate{
+display:flex;
+}
+#strikepriceonly{
+  margin-left: 50px;
+  text-decoration:line-through;
+}
+#cartaddingarea{
+width:80%;
+display:flex;
+justify-content:space-around;
+margin-top:6%;
+margin-bottom:6%;
+text-align:center;
+}
+#abuynow{
+width:35%;
+background-color: rgb(218, 28, 92);
+padding:4% 6%;
+color:white;
+border-radius: 25.5px;
+box-sizing: border-box;
+}
+#abuynow:hover{
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; 
+}
+#aaddtobag{
+width:35%;
+border: 2px solid rgb(218, 28, 92);
+padding:4% 6%;
+border-radius: 25.5px;
+box-sizing: border-box;
+color:rgb(218, 28, 92);
+background-color:white;
+}
+#aaddtobag:hover{
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; 
+}
+p{
+color: #80797b;
+font-size: 15px;
+ letter-spacing: 0.2px;
+ font-family: "regular";
+ margin-top: 5px;
+ padding: 1px 2px;
+}
+h2{
+color: #181818;
+font-size: 20px;
+font-family: semibold;
+}
+.belowtax{
+color: #ff1744;
+font-size: 13px;
+}
+.singlepagedescription{
+text-align: start;
+margin-top: 35px;
+/* margin-left: 7%; */
+width: 100%;
+height: auto;
+/* margin-top: 10px; */
+font-size: 14px;
+line-height: 22px;
+font-family: light;
+color: #212121;
+
+position: relative;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; 
+color: #80797b;
+font-size: 15px;
+ letter-spacing: 0.2px;
+ font-family: "regular";
+ margin-top: 15px;
+ margin-bottom: 5px;
+ padding: 10px;
+
+}
+.singlepagedescription > h2{
+    font-family:monospace;
+}
+#bankemiofferss{
+font-size: 16px;
+line-height: 22px;
+font-family: light;
+color: #212121;
+padding: 15px;
+position: relative;
+}
+
+#decrezewidth{
+width:80%;
+margin:auto;
+margin-top: 35px;
+background-color:white;
+/* padding-bottom:4%; */
+margin-bottom: 5%;
+}
+#ratingarea{
+  margin-top: 5%;
+}
+
+/* @media screen and (min-width: 350px) and (max-width: 700px) {
+    #singleproduct{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        
+        background-color: white;
+        padding-bottom:4%;
+        padding-top:4%;
+       
+    }
+} */
+
+#abuynow{
+    height: 60px;
+    width: 150px;
+    border-radius: 20px;
+    float: none;
+    background: none rgb(255, 23, 68);
+    border: transparent;
+    color:white;
+    margin-top: 10%;
+   text-align: center;
+   cursor: pointer;
+}
+#aaddtobag{
+    height: 60px;
+    width: 150px;
+    border-radius: 20px;
+    float: none;
+    border: transparent;
+    /* color:white; */
+    margin-top: 10%;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+}
+/* From cssbuttons.io by @westitan */
+button {
+    position: relative;
+    /* padding: 19px 6px; */
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 40px;
+    border: none;
+   }
+   
+   button span {
+    position: relative;
+    color: #fff;
+    font-family: Arial;
+    letter-spacing: 5px;
+    z-index: 1;
+   }
+   
+   button .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background:  rgb(255, 23, 68);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: .5s;
+   }
+   
+   button .liquid::after,
+   button .liquid::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #fff;
+   }
+   
+   button .liquid::before {
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 5s linear infinite;
+   }
+   
+   button .liquid::after {
+    border-radius: 40%;
+    background: rgba(20, 20, 20, .5);
+    animation: animate 10s linear infinite;
+   }
+   
+   button:hover .liquid {
+    top: -120px;
+   }
+   
+   @keyframes animate {
+    0% {
+     transform: translate(-50%, -75%) rotate(0deg);
+    }
+   
+    100% {
+     transform: translate(-50%, -75%) rotate(360deg);
+    }
+   }
+ 
+   #downimages{
+       width:80%;
+       height:60px;
+       display:flex;
+       justify-content: space-around;
+       background-color: rgba(20, 20, 20,);
+       margin-top:2%;
+   }
