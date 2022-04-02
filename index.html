@@ -817,6 +817,8 @@
 
 </html>
 <script type="module">
+    let length=   localStorage.getItem("cart");
+    document.querySelector(".numb").innerText = length;
     let footer = document.querySelector("#low-footer")
     import footerf from "./components/footer.js"
     footer.innerHTML = footerf()
