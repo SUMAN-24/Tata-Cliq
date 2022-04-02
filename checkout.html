@@ -16,6 +16,7 @@
         #full {
             background-color: rgb(236, 236, 236);
             margin-left: 6.25rem;
+            
         }
 
         h1 {
@@ -24,6 +25,7 @@
 
         #acontainer {
             display: flex;
+            justify-content: space-around;
             gap: 1.875rem;
         }
 
@@ -565,7 +567,7 @@
     <!-- --------- Nav Bar Ends ------------------->
     <div id="full">
         <h1>Checkout</h1>
-    <div id="acontainer">
+    <div  id="acontainer">
 
         <div id="aleft">
 
@@ -595,8 +597,8 @@
         <!-- <div id="aright">
            <h1 id="t1">display</h1>
         </div> -->
-        <div>
-            <div class="makeitflex"><img width="60" src="./images/fast.png" alt="">
+        <div style="width:30%">
+            <div  class="makeitflex"><img width="60" src="./images/fast.png" alt="">
                 <h4>Congratulations!! Your order is eligible <br> for FREE Shipping!</h4>
             </div>
             <div>
@@ -622,7 +624,7 @@
             </div>
             <div id="margingapdiv">
                 <div class="nomargintop">
-                    <div>
+                    <div style="padding:5%">
                         <h2>Total:</h2>
                         <h2 id="totalnetprice"></h2>
                     </div><button id="checkoutbuttonincart">
@@ -687,4 +689,9 @@
     document.getElementById("bagsubtotalprice").innerHTML = `₹ ${total}`;
     document.getElementById("gotocheckoutpage").innerHTML = `₹ ${total}`;
 
+
+
+
+    let length=   localStorage.getItem("cart");
+    document.querySelector(".numb").innerText = length;
 </script>
