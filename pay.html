@@ -15,6 +15,7 @@
     <style>
         #container1 {
             display: flex;
+            justify-content: space-around;
             gap: 1.875rem;
 
         }
@@ -754,7 +755,7 @@
             </div>
         </div>
         <!-- <div id="right1"> -->
-        <div>
+        <div  style="width:30%">
             <div class="makeitflex"><img width="60" src="./images/fast.png" alt="">
                 <h4>Congratulations!! Your order is eligible <br> for FREE Shipping!</h4>
             </div>
@@ -887,9 +888,9 @@
         console.log("total", total)
 
         var res = Math.ceil(((total) / 100) * (100 - per))
-        document.querySelector("#gotocheckoutpage").textContent = res;
-        document.querySelector("#bagtotalprice").textContent = res;
-        document.querySelector("#bagsubtotalprice").textContent = res;
+        document.querySelector("#gotocheckoutpage").textContent ="₹"+ res;
+        document.querySelector("#bagtotalprice").textContent ="₹"+ res;
+        document.querySelector("#bagsubtotalprice").textContent = "₹"+ res;
 
         console.log("total11", res)
     }
@@ -899,5 +900,9 @@
     console.log("yyy", t5)
     document.getElementById("p1").append(t5)
 
+
+
+    let length=   localStorage.getItem("cart");
+    document.querySelector(".numb").innerText = length;
 
 </script>

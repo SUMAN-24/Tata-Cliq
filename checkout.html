@@ -24,6 +24,7 @@
 
         #acontainer {
             display: flex;
+            justify-content: space-around;
             gap: 1.875rem;
         }
 
@@ -595,8 +596,8 @@
         <!-- <div id="aright">
            <h1 id="t1">display</h1>
         </div> -->
-        <div>
-            <div class="makeitflex"><img width="60" src="./images/fast.png" alt="">
+        <div style="width:30%">
+            <div  class="makeitflex"><img width="60" src="./images/fast.png" alt="">
                 <h4>Congratulations!! Your order is eligible <br> for FREE Shipping!</h4>
             </div>
             <div>
@@ -687,4 +688,9 @@
     document.getElementById("bagsubtotalprice").innerHTML = `₹ ${total}`;
     document.getElementById("gotocheckoutpage").innerHTML = `₹ ${total}`;
 
+
+
+
+    let length=   localStorage.getItem("cart");
+    document.querySelector(".numb").innerText = length;
 </script>
