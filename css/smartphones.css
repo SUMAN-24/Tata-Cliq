@@ -361,3 +361,28 @@ div{
 .price_links img{
     width: 70%;
 }
+
+.ram_sizes{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px ;
+    padding-left: 60px;
+}
+
+.ram_sizesA{
+    width: 80%;
+    margin: auto;
+}    
+
+.ram_sizes img{
+    width: 66%;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.ram_sizes img:hover{
+    transition: all ease 1s;
+    transform: scale(1.05);
+}
