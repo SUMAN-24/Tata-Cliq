@@ -347,3 +347,17 @@ div{
     margin-top: 35px;
     margin-left: -28px;
 }
+
+.price_links{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px ;
+    padding-left: 250px;
+    gap: 2px;
+}
+
+.price_links img{
+    width: 70%;
+}
