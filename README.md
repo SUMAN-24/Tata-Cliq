@@ -27,4 +27,4 @@ HTML, CSS, JavaScript
 - [@Navedphysicist](https://github.com/Navedphysicist)
 - [@paras0602](https://github.com/paras0602)
 - [@abhinavroy121](https://github.com/abhinavroy121)
-- [@](https://github.com/)
+- [@amanbind36 ](https://github.com/amanbind36)
