@@ -28,3 +28,21 @@ HTML, CSS, JavaScript
 - [@paras0602](https://github.com/paras0602)
 - [@abhinavroy121](https://github.com/abhinavroy121)
 - [@amanbind36 ](https://github.com/amanbind36)
+
+## Screenshots
+
+- **Landing Page Image 1**
+
+![Landing Page 1](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Landing%20Page%201.png)
+
+- **Landing Page Image 2**
+
+![Landing Page 2](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Landing%20Page%202.png)
+
+- **Landing Page Image 3**
+
+![Landing Page 3](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Landing%20Page%203.png)
+
+- **Landing Page Image 4**
+
+![Landing Page 3](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Landing%20Page%204.png)
