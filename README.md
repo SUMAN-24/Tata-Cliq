@@ -66,3 +66,19 @@ HTML, CSS, JavaScript
 - **Sign Up Form**
 
 ![Sign up form](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Sign%20Up%20form.png)
+
+- **Smartphone Section Landing Page Image 1**
+
+![Landing Page 1](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Landing%20Page%20of%20Smartphone%20section%20.png)
+
+- **Smartphone Section Landing Page Image 2**
+
+![Landing Page 2](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Landing%20Page%202%20of%20Smartphone%20section%20.png)
+
+- **Smartphone Section Landing Page Image 3**
+
+![Landing Page 3](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Landing%20Page%203%20of%20Smartphone%20section%20.png)
+
+- **Smartphone Section Landing Page Image 4**
+
+![Landing Page 4](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Landing%20Page%204%20of%20Smartphone%20section%20.png)
