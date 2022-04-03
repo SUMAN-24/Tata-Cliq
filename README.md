@@ -51,6 +51,6 @@ HTML, CSS, JavaScript
 
 ![Mobile Landing Page](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Landing%20page%20mobile.png)
 
-**Responsive Navbar**
+- **Responsive Navbar**
 
 ![Responsive Navbar](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Responsive%20Navbar.png)
