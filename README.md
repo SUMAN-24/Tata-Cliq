@@ -82,3 +82,7 @@ HTML, CSS, JavaScript
 - **Smartphone Section Landing Page Image 4**
 
 ![Landing Page 4](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Landing%20Page%204%20of%20Smartphone%20section%20.png)
+
+- **Apple Phones Category Page**
+
+![Apple Phones Category Page](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Apple%20Phones%20Category%20Page.png)
