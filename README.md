@@ -95,6 +95,10 @@ HTML, CSS, JavaScript
 
 ![Apple Phones Category Page](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/High%20to%20Low%20sorting.png)
 
+- **Buy Now and Add to Bag option**
+
+![Buy Now and Add to Bag option](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Buy%20Now%20and%20Add%20to%20Bag%20option.png)
+
 - **Shopping Cart Section**
 
 ![Shopping Cart Section](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Shopping%20Cart.png)
