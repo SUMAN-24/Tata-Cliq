@@ -94,3 +94,7 @@ HTML, CSS, JavaScript
 - **High to Low Sorting category**
 
 ![Apple Phones Category Page](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/High%20to%20Low%20sorting.png)
+
+- **Shopping Cart Section**
+
+![Shopping Cart Section](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Shopping%20Cart.png)
