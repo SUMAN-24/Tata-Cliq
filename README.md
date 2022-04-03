@@ -110,3 +110,7 @@ HTML, CSS, JavaScript
 - **Checkout Section and Payment Option**
 
 ![Checkout Section](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/checkout%20page.png)
+
+- **OTP Section**
+
+![OTP Section](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/OTP%20section.png)
