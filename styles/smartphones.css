@@ -293,8 +293,8 @@ div{
 }
 
 .logo{
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
     /* max-width: 100%; */
     overflow: hidden;
     display: inline-block;
@@ -332,6 +332,7 @@ div{
 .iphone_content img{
     width: 92%;
     border-radius: 2px;
+    padding-bottom: 40px;
 }
 
 .iphone_content img:hover{
@@ -346,6 +347,16 @@ div{
     display: block;
     margin-top: 35px;
     margin-left: -28px;
+}
+
+.smart_update2{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+    margin-top: 35px;
+    padding-left: 160px;
+    align-items: center;
 }
 
 .price_links{
