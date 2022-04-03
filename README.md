@@ -86,3 +86,11 @@ HTML, CSS, JavaScript
 - **Apple Phones Category Page**
 
 ![Apple Phones Category Page](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Apple%20Phones%20Category%20Page.png)
+
+- **Low to High Sorting category**
+
+![Apple Phones Category Page](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Low%20to%20High%20sorting.png)
+
+- **High to Low Sorting category**
+
+![Apple Phones Category Page](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/High%20to%20Low%20sorting.png)
