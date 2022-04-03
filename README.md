@@ -45,7 +45,11 @@ HTML, CSS, JavaScript
 
 - **Landing Page Image 4**
 
-![Landing Page 3](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Landing%20Page%204.png)
+![Landing Page 4](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Landing%20Page%204.png)
+
+- **Landing Page Image 5**
+
+![Landing Page 5](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Landing%20Page%205.png)
 
 - **Landing Page on Mobile Devices**
 
