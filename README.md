@@ -102,3 +102,7 @@ HTML, CSS, JavaScript
 - **Shopping Cart Section**
 
 ![Shopping Cart Section](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Shopping%20Cart.png)
+
+- **Checkout Section**
+
+![Checkout Section](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/checkout%20page.png)
