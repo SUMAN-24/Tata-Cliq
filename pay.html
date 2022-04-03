@@ -120,6 +120,12 @@
             padding: 0.5rem;
             margin-top: 1.25rem;
         }
+        #cardN{
+            width: 18.75rem;
+            margin-right: 3.125rem;
+            padding: 0.5rem;
+            margin-top: 1.25rem;
+        }
 
         #month1 {
             width: 6.25rem;
@@ -716,7 +722,7 @@
                     <h3>Payment Method</h3>
                     <i class="fa fa-credit-card"> credit card</i>
                     <br>
-                    <input type="text" name="" id="card" placeholder="Card Number">
+                    <input type="text" name="" id="cardN" placeholder="Card Number">
                     <select name="" id="month">
                         <option id="month1" value="">Expiry Month</option>
                         <option value="1">1</option>
@@ -826,8 +832,25 @@
     var t = document.getElementById("form2").addEventListener("submit", submit1)
     function submit1() {
         event.preventDefault();
-        console.log("raam")
-        window.location.assign("otp.html")
+        
+    let card_number = document.querySelector("#cardN").value;
+    let card_year = document.querySelector("#year").value;
+    let card_month = document.querySelector("#month").value;
+    let card_name = document.querySelector("#card").value;
+    let card_cvv = document.querySelector("#card1").value;
+
+    let card = JSON.parse(localStorage.getItem("card"));
+
+    if((card_number == card.card_number) && (card_year == card.card_year) && (card_month == card.card_month) && (card_name == card.card_name)
+    && (card_cvv == card.card_cvv))
+    {
+       
+        window.location.assign("otp.html");
+    }
+    else{
+        alert("Invalid Credentials");
+    }
+        
     }
 
     var total = JSON.parse(localStorage.getItem("total"));
@@ -875,6 +898,16 @@
 
 
 
+
+    let obj = {
+        card_number: "1111 2222 3333 4444",
+        card_name: "Suman",
+        card_month: 5,
+        card_year: 2026,
+        card_cvv : 123,
+    }
+
+    localStorage.setItem("card",JSON.stringify(obj));
 
 
 

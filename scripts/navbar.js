@@ -195,6 +195,7 @@ function ope() {
 const modeltoggle = () => {
     let model = document.querySelector(".model-box");
     model.classList.toggle("modelhidden");
+    document.querySelector('.slideshow-container').style.display='none';
 };
 var register = document.querySelector(".register");
 register.addEventListener("click", modeltoggle);
@@ -205,6 +206,7 @@ mobile_sign.addEventListener("click", modeltoggle);
 function clos() {
     let model = document.querySelector(".model-box");
     model.classList.toggle("modelhidden");
+    document.querySelector('.slideshow-container').style.display='flex';
 }
 
 // login  window end...

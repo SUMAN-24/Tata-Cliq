@@ -34,7 +34,8 @@ function movetoNext(current, nextFieldID) {
 function optSent(event)
 {
    event.preventDefault()
-   window.location.href="./sucess.html"
+   localStorage.removeItem("cart");
+   window.location.href="./sucess.html";
 }
 
 function change()

@@ -463,7 +463,7 @@
                                 <img src="icons/whistlistt.svg" alt="">
                             </div>
                             <div class="cart">
-                                <a href="#">
+                                <a href="cart.html">
                                     <span class="numb">0</span>
                                     <img src="icons/cart icon.svg" alt="" style="width: 20px;">
                                 </a>
@@ -820,6 +820,8 @@
     let footer = document.querySelector("#low-footer")
     import footerf from "./components/footer.js"
     footer.innerHTML = footerf()
+    let length = localStorage.getItem("cart");
+    document.querySelector(".numb").innerText=length;
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
