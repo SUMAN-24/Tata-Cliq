@@ -54,3 +54,11 @@ HTML, CSS, JavaScript
 - **Responsive Navbar**
 
 ![Responsive Navbar](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Responsive%20Navbar.png)
+
+- **Login Portal**
+
+![Login Portal](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Login%20Portal.png)
+
+- **Sign Up Form**
+
+![Sign up form](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Sign%20Up%20form.png)
