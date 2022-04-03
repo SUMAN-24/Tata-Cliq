@@ -114,3 +114,7 @@ HTML, CSS, JavaScript
 - **OTP Section**
 
 ![OTP Section](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/OTP%20section.png)
+
+- **Payment Successful Section**
+
+![Payment Successful Section](https://github.com/SUMAN-24/Tata-Cliq/blob/main/Website%20Sneak%20Peeks/Payment%20successful%20page.png)
