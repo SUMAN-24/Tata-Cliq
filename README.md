@@ -18,7 +18,7 @@ https://zesty-baklava-77a6db.netlify.app
 
 ## Tech Stack
 
-HTML, CSS, JavaScript
+HTML, CSS, JavaScript, Bootstrap 
 
 ## Contributors
 
