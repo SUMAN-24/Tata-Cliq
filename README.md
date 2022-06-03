@@ -6,7 +6,7 @@ Tata Cliq is an Indian e-commerce company based in Mumbai, India. It is owned by
 
 ## Deployed Site
 
-https://zesty-baklava-77a6db.netlify.app
+clone-tatacliq.netlify.app
 
 ## Features
 
