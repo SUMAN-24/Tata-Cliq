@@ -18,7 +18,7 @@ clone-tatacliq.netlify.app
 
 ## Tech Stack
 
-HTML, CSS, JavaScript, Bootstrap 
+HTML5, CSS3, JavaScript, Bootstrap5
 
 ## Contributors
 
