@@ -2,7 +2,7 @@
 
 This project is a clone of the [Tata CLiQ](https://www.tatacliq.com/) website. During our construct week in Masai School, we as a group of 6 members collaborated and cloned the website within 6 days time.
 
-Tata Cliq is an Indian e-commerce company based in Mumbai, India. It is owned by Tata Digital Limited, of Tata Group. TataCLiQ operates in categories such as Electronics, Fashion, Footwear and Accessories.
+Tata-Cliq  is an E-commerce web application to provides a wide range of apparel and accessories for men and women. It is owned by Tata Digital Limited, of Tata Group. TataCLiQ operates in categories such as Electronics, Fashion, Footwear and Accessories.
 
 ## Deployed Site
 
